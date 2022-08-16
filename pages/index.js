@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai'
+import Image from 'next/image'
+import avatar from '../public/dev-ed-wave.png'
 
 export default function Home() {
   return (
@@ -12,6 +14,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=' bg-white px-10'>
+
+        {/* HOMEPAGE SECTION */}
+
         <section className='min-h-screen'>
         
         {/* Navigation Section */}
@@ -24,7 +29,7 @@ export default function Home() {
           </ul>
         </nav>
 
-          {/* HomePage */}
+          {/* Introduction */}
           
           <div className=' text-center p-10 font-productsans'>
             <h2 className=' text-5xl py-2 text-teal-600'>Akshit Abhay Keoliya</h2>
@@ -32,14 +37,29 @@ export default function Home() {
             <p className=' text-md py-5 leading-8 text-gray-800'>Some sweet description for myself to highlight my profile</p>
           </div>
 
+          {/* Contacts */}
+
           <div className=' text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <AiFillLinkedin />
-            <AiFillGithub />
-            <AiFillTwitterCircle />
-            <AiFillInstagram />
+            <a href='https://www.linkedin.com/in/akshit-keoliya'><AiFillLinkedin /></a>  
+            <a href='https://github.com/Leonardo-daVinci'><AiFillGithub /></a>
+            <a href='https://twitter.com/AkshitAbhay'><AiFillTwitterCircle /></a>
+            <a href='https://www.instagram.com/machine.learning.chef'><AiFillInstagram /></a>
+          </div>
+
+          {/* Image */}
+
+          <div className=' relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden '>
+          <Image src={avatar} fill="true" objectFit='cover'/>
           </div>
 
         </section>
+
+        {/* SKILLS SECTION */}
+
+        <section>
+          
+        </section>
+
       </main>
     </>
   )
