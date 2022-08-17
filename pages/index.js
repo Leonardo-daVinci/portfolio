@@ -3,6 +3,9 @@ import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai'
 import Image from 'next/image'
 import avatar from '../public/dev-ed-wave.png'
+import design from '../public/design.png'
+import code from '../public/code.png'
+import consulting from '../public/consulting.png'
 
 export default function Home() {
   return (
@@ -57,7 +60,56 @@ export default function Home() {
         {/* SKILLS SECTION */}
 
         <section>
-          
+          <div className=' font-productsans'>
+              <h3 className=' text-3xl py-1'>My skills</h3>
+              <p className=' text-md py-2 leading-8 text-gray-800'> Small description of 
+                <span className=' text-teal-500'> ML skills, Android and Web</span> development ?
+              </p>
+          </div>
+
+          {/* Cards */}
+          <div className=' font-productsans text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='flex justify-center'>
+            <Image src={design} width={100} height={100}/>
+            </div>
+            <h3 className=' text-lg pt-8 pb-2'>Machine Learning Skills</h3>
+            <p className='py-2'>
+              Employing Machine learning algorithms to create real-life projects.
+            </p>
+            <h4 className=' text-teal-600 py-4'>Frameworks and Tools I use</h4>
+            <p className=' text-gray-800 py-1'>TensorFlow</p>
+            <p>PyTorch</p>
+            <p>Google Colab</p>
+          </div>
+
+          <div className=' font-productsans text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='flex justify-center'>
+            <Image src={code} width={100} height={100}/>
+            </div>
+            <h3 className=' text-lg pt-8 pb-2'>Machine Learning Skills</h3>
+            <p className='py-2'>
+              Employing Machine learning algorithms to create real-life projects.
+            </p>
+            <h4 className=' text-teal-600 py-4'>Frameworks and Tools I use</h4>
+            <p className=' text-gray-800 py-1'>TensorFlow</p>
+            <p>PyTorch</p>
+            <p>Google Colab</p>
+          </div>
+
+          <div className=' font-productsans text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='flex justify-center'>
+            <Image src={consulting} width={100} height={100}/>
+            </div>
+            <h3 className=' text-lg pt-8 pb-2'>Machine Learning Skills</h3>
+            <p className='py-2'>
+              Employing Machine learning algorithms to create real-life projects.
+            </p>
+            <h4 className=' text-teal-600 py-4'>Frameworks and Tools I use</h4>
+            <p className=' text-gray-800 py-1'>TensorFlow</p>
+            <p>PyTorch</p>
+            <p>Google Colab</p>
+          </div>
+
         </section>
 
       </main>
