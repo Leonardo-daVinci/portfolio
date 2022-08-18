@@ -6,6 +6,11 @@ import avatar from '../public/dev-ed-wave.png'
 import design from '../public/design.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'
+import web1 from '../public/web1.png'
+import web2 from '../public/web2.png'
+import web3 from '../public/web3.png'
+import web4 from '../public/web4.png'
+import web5 from '../public/web5.png'
 
 export default function Home() {
   return (
@@ -16,7 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=' bg-white px-10'>
+      <main className=' bg-white px-10 md:px-20 lg:px-40'>
 
         {/* HOMEPAGE SECTION */}
 
@@ -35,9 +40,9 @@ export default function Home() {
           {/* Introduction */}
           
           <div className=' text-center p-10 font-productsans'>
-            <h2 className=' text-5xl py-2 text-teal-600'>Akshit Abhay Keoliya</h2>
-            <h3 className=' text-2xl py-2'>Machine Learning Enthusiast and Developer</h3>
-            <p className=' text-md py-5 leading-8 text-gray-800'>Some sweet description for myself to highlight my profile</p>
+            <h2 className=' text-5xl py-2 text-teal-600 md:text-6xl'>Akshit Abhay Keoliya</h2>
+            <h3 className=' text-2xl py-2 md:text-3xl'>Machine Learning Enthusiast and Developer</h3>
+            <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl max-w-xl mx-auto'>Some sweet description for myself to highlight my profile</p>
           </div>
 
           {/* Contacts */}
@@ -51,7 +56,7 @@ export default function Home() {
 
           {/* Image */}
 
-          <div className=' relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden '>
+          <div className=' relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
           <Image src={avatar} fill="true" objectFit='cover'/>
           </div>
 
@@ -68,6 +73,7 @@ export default function Home() {
           </div>
 
           {/* Cards */}
+          <div className='lg:flex gap-10'>
           <div className=' font-productsans text-center shadow-lg p-10 rounded-xl my-10'>
             <div className='flex justify-center'>
             <Image src={design} width={100} height={100}/>
@@ -109,6 +115,27 @@ export default function Home() {
             <p>PyTorch</p>
             <p>Google Colab</p>
           </div>
+          </div>
+          
+
+        </section>
+
+        {/* PORTFOLIO SECTION */}
+        <section>
+          <div className=' font-productsans'>
+          <h3 className=' text-3xl py-1'>Portfolio</h3>
+          <p>Some description about the projects</p>
+          </div>
+
+          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+            <div className=' basis-1/3 flex-1'>
+              <Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+            </div>
+            <div className=' basis-1/3 flex-1'>
+              <Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+            </div>
+          </div>
+          
 
         </section>
 
