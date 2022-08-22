@@ -10,6 +10,7 @@ import web1 from '../public/web1.png'
 import web2 from '../public/web2.png'
 import {useState} from 'react'
 import Link from 'next/link'
+import SideNavBar from '../components/SideNavbar'
 
 export default function Home() {
 
@@ -23,7 +24,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=' bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
+      <SideNavBar />
+      <main className=' bg-white px-10 md:px-20 lg:ml-60 lg:px-40 dark:bg-gray-900'>
 
         {/* HOMEPAGE SECTION */}
 
