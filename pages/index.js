@@ -44,7 +44,9 @@ export default function Home() {
           <div className=' text-center p-10 font-productsans'>
             <h2 className=' text-5xl py-2 text-teal-600 md:text-6xl dark:text-teal-400'>Akshit Abhay Keoliya</h2>
             <h3 className=' text-2xl py-2 md:text-3xl dark:text-white'>Machine Learning Enthusiast and Developer</h3>
-            <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl max-w-xl mx-auto dark:text-gray-200'>Some sweet description for myself to highlight my profile</p>
+            <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl max-w-xl mx-auto dark:text-gray-200'>
+              Some sweet description for myself to highlight my profile
+              </p>
           </div>
 
           {/* Contacts */}
@@ -68,7 +70,7 @@ export default function Home() {
 
         <section>
           <div className=' font-productsans'>
-              <h3 className=' text-3xl py-1 gap-16 dark:text-white'>My skills</h3>
+              <h3 className=' text-3xl py-1 gap-16 mt-8 dark:text-white'>My skills</h3>
               <p className=' text-md py-2 leading-8 text-gray-800 dark:text-gray-200'> Small description of 
                 <span className=' text-teal-500'> ML skills, Android and Web</span> development ?
               </p>
@@ -76,17 +78,17 @@ export default function Home() {
 
           {/* Cards */}
           <div className='lg:flex gap-10'>
-          <div className=' font-productsans text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1'>
+          <div className=' font-productsans text-center p-10 rounded-xl my-10 flex-1 border-teal-600 border-4 dark:border-teal-400'>
             <div className='flex justify-center'>
             <Image src={lang} width={100} height={100}/>
             </div>
-            <h3 className=' text-lg text-teal-600 pt-8 pb-2'>Languages Known</h3>
-            <p className='py-2'>
+            <h3 className=' text-xl text-teal-600 pt-8 pb-2 dark:text-teal-400'>Languages Known</h3>
+            <p className='py-2 dark:text-white'>
               Some of the languages I use often and .. not so often.
             </p>
 
             <div className='flex gap-5'>
-            <div className='font-productsans text-center p-5 rounded-lg my-5 dark:bg-slate-500 flex-1'>
+            <div className='font-productsans text-center p-5 rounded-lg my-5 border-4 border-slate-700  dark:bg-slate-500 flex-1'>
               <div className='flex justify-center mb-2'>
                   <img height="32" width="32" src="https://cdn.simpleicons.org/python/3776AB" />
               </div>
@@ -119,7 +121,7 @@ export default function Home() {
             
           </div>
 
-          <div className=' font-productsans text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1'>
+          <div className=' font-productsans text-center  p-10 rounded-xl my-10 border-4 flex-1 border-teal-600 dark:border-teal-400'>
             <div className='flex justify-center'>
             <Image src={machine} width={100} height={100}/>
             </div>
@@ -133,7 +135,7 @@ export default function Home() {
             <p>Google Colab</p>
           </div>
 
-          <div className=' font-productsans text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1'>
+          <div className=' font-productsans text-center  p-10 rounded-xl my-10 border-4 flex-1 border-teal-600 dark:border-teal-400'>
             <div className='flex justify-center'>
             <Image src={tools} width={100} height={100}/>
             </div>
@@ -158,10 +160,35 @@ export default function Home() {
           <p className=' text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>Some description about the projects</p>
           </div>
 
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className=' basis-1/3 flex-1'>
-              <Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+          <div className=' font-productsans flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+            
+            {/* Multi-camera Surveillance */}
+            <div className=' basis-1/3 flex-1 border-4 border-teal-600 dark:border-teal-400 rounded-lg'>
+              <Image src={web1} className=" rounded-b-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+              <div className=' px-4 py-4'>
+                <h3 className="text-xl text-gray-800 dark:text-white">Multi-Camera Surveillance System</h3>
+              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
+              <button className='rounded-full border-2 text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white p-2
+               dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>Machine Learning</button>
+              <button className='rounded-full mx-2 border-2 text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white p-2
+               dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>Python</button>
+              </div>
             </div>
+
+            <div className=' basis-1/3 flex-1 border-4 border-teal-600 dark:border-teal-400 rounded-lg'>
+              <Image src={web1} className=" rounded-b-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+              <div className=' px-4 py-4'>
+                <h3 className="text-xl text-gray-800 dark:text-white">Amazon React Clone</h3>
+              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
+              <button className='rounded-full border-2 text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white p-2
+               dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>React</button>
+               <button className='rounded-full ml-2 border-2 text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white p-2
+               dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>Firebase</button>
+              <button className='rounded-full ml-2 border-2 text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white p-2
+               dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>JavaScript</button>
+              </div>
+            </div>
+
             <div className=' basis-1/3 flex-1'>
               <Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
             </div>
@@ -169,7 +196,7 @@ export default function Home() {
           
         </section>
 
-        {/* <section>
+        <section>
           <div className=' text-center p-10 font-productsans'>
               <h3 className='text-5xl py-2 text-teal-600 md:text-6xl dark:text-teal-400'>
               <Link href="/timeline"> Go to timeline </Link>
@@ -177,7 +204,7 @@ export default function Home() {
 
           </div>
 
-        </section> */}
+        </section>
 
         
 
