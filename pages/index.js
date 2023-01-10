@@ -198,7 +198,7 @@ export default function Home() {
           
         </section>
 
-        <section>
+        {/* <section>
           <div className=' text-center p-10 font-productsans'>
               <h3 className='text-5xl py-2 text-teal-600 md:text-6xl dark:text-teal-400'>
               <Link href="/timeline"> Go to timeline </Link>
@@ -206,7 +206,7 @@ export default function Home() {
 
           </div>
 
-        </section>
+        </section> */}
 
         
 
