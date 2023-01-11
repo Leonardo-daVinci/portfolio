@@ -6,7 +6,7 @@ const nextConfig = {
     path: "", 
   },
   distDir: "build",
-  basePath: " /portfolio",
+  basePath: "/portfolio",
   assetPrefix: "/portfolio"
 }
 
