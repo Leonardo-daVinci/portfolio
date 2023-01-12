@@ -6,6 +6,9 @@ import avatar from '../public/dev-ed-wave.png'
 import lang from '../public/lang.png'
 import machine from '../public/machine.png'
 import tools from '../public/tools.png'
+import amazon from "../public/amazon-clone.png"
+import fashion from "../public/hm-fashion.png"
+import vigil from "../public/vigil-system.png"
 import web1 from '../public/web1.png'
 import web2 from '../public/web2.png'
 import {useState} from 'react'
@@ -63,7 +66,7 @@ export default function Home() {
           {/* Image */}
 
           <div className=' relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-          <Image src={avatar} fill="true" objectFit='cover'/>
+          <Image src={avatar} alt='Avatar' fill="true" objectFit='cover' loading='eager' />
           </div>
 
         </section>
@@ -166,7 +169,7 @@ export default function Home() {
             
             {/* Multi-camera Surveillance */}
             <div className=' basis-1/3 flex-1 border-4 border-teal-600 dark:border-teal-400 rounded-lg'>
-              <Image src={web1} className=" rounded-b-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+              <Image src={vigil} className=" rounded-b-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
               <div className=' px-4 py-4'>
                 <h3 className="text-xl text-gray-800 dark:text-white">Multi-Camera Surveillance System</h3>
               <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
@@ -178,7 +181,7 @@ export default function Home() {
             </div>
 
             <div className=' basis-1/3 flex-1 border-4 border-teal-600 dark:border-teal-400 rounded-lg'>
-              <Image src={web1} className=" rounded-b-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+              <Image src={amazon} className=" rounded-b-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
               <div className=' px-4 py-4'>
                 <h3 className="text-xl text-gray-800 dark:text-white">Amazon React Clone</h3>
               <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
@@ -190,6 +193,17 @@ export default function Home() {
                dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>JavaScript</button>
               </div>
             </div>
+
+            <div className=' basis-1/3 flex-1 border-4 border-teal-600 dark:border-teal-400 rounded-lg'>
+              <Image src={fashion} className=" rounded-b-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+              <div className=' px-4 py-4'>
+                <h3 className="text-xl text-gray-800 dark:text-white">H and M Fashion Recommendation System</h3>
+              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
+              <button className='rounded-full border-2 text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white p-2
+               dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>Python</button>
+              </div>
+            </div>
+
 
             <div className=' basis-1/3 flex-1'>
               <Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
