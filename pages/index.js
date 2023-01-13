@@ -27,7 +27,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={`${process.env.NEXT_PUBLIC_FAVICON}/favicon.ico`}/>
       </Head>
-      <SideNavBar />
+      <SideNavBar/>
       <main className=' bg-white px-10 md:px-20 lg:ml-60 lg:px-40 dark:bg-gray-900'>
 
         {/* HOMEPAGE SECTION */}
@@ -37,7 +37,7 @@ export default function Home() {
         {/* Navigation Section */}
         
         <nav className=' py-10 mb-12 flex justify-between dark:text-white'>
-          <h1 className=' text-lg font-productsans'>Leonardo-daVinci</h1>
+          {/* <h1 className=' text-lg font-productsans'>Leonardo-daVinci</h1> */}
           <ul className='flex items-center'>
               <li><BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className=' cursor-pointer text-2xl'/></li>
               <li><a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-productsans px-4 py-2 rounded-md ml-8' href='#'>Resume</a></li>
@@ -50,7 +50,8 @@ export default function Home() {
             <h2 className=' text-5xl py-2 text-teal-600 md:text-6xl dark:text-teal-400'>Akshit Abhay Keoliya</h2>
             <h3 className=' text-2xl py-2 md:text-3xl dark:text-white'>Machine Learning Enthusiast and Developer</h3>
             <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl max-w-xl mx-auto dark:text-gray-200'>
-              Some sweet description for myself to highlight my profile
+            Completing my master's in Computer Science at USC.  <br></br>
+            Excited to apply my knowledge to real-world problems and help organizations improve their operations and decision-making through machine learning!
               </p>
           </div>
 
@@ -76,8 +77,10 @@ export default function Home() {
         <section>
           <div className=' font-productsans'>
               <h3 className=' text-3xl py-1 gap-16 mt-8 dark:text-white'>My skills</h3>
-              <p className=' text-md py-2 leading-8 text-gray-800 dark:text-gray-200'> Small description of 
-                <span className=' text-teal-500'> ML skills, Android and Web</span> development ?
+              <p className=' text-md py-2 leading-8 text-gray-800 dark:text-gray-200'> 
+              I have a strong background in mathematics and computer science and 
+              have been working on developing my skills in machine learning techniques and algorithms.
+                {/* <span className=' text-teal-500'> ML skills, Android and Web</span> development ? */}
               </p>
           </div>
 
@@ -132,9 +135,9 @@ export default function Home() {
             </div>
             <h3 className=' text-xl text-teal-600 pt-8 pb-2'>Frameworks</h3>
             <p className='py-2'>
-              
+              Set of libraries and techniques I use to implement and develop machine learning models.
             </p>
-            <h4 className='  py-4'>Frameworks and Tools I use</h4>
+            <h4 className='  py-4'>Frameworks I use</h4>
             <p className=' text-gray-800 py-1'>TensorFlow</p>
             <p>PyTorch</p>
             <p>Google Colab</p>
@@ -146,7 +149,7 @@ export default function Home() {
             </div>
             <h3 className=' text-lg pt-8 pb-2'>Tools</h3>
             <p className='py-2'>
-              Employing Machine learning algorithms to create real-life projects.
+              Tools I use for various tasks such as data pre-processing, visualization, model development and deployment.
             </p>
             <h4 className=' text-teal-600 py-4'>Frameworks and Tools I use</h4>
             <p className=' text-gray-800 py-1'>TensorFlow</p>
