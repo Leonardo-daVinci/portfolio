@@ -50,7 +50,9 @@ export default function Home() {
             <h2 className=' text-5xl py-2 text-teal-600 md:text-6xl dark:text-teal-400'>Akshit Abhay Keoliya</h2>
             <h3 className=' text-2xl py-2 md:text-3xl dark:text-white'>Machine Learning Enthusiast and Developer</h3>
             <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl max-w-xl mx-auto dark:text-gray-200'>
-            Completing my master's in Computer Science at USC.  <br></br>
+            Completing my master's in Computer Science at 
+            <span className=' text-teal-600 dark:text-teal-400'><a href='https://www.usc.edu/'> USC</a></span>.
+            <br></br>
             Excited to apply my knowledge to real-world problems and help organizations improve their operations and decision-making through machine learning!
               </p>
           </div>
@@ -86,16 +88,56 @@ export default function Home() {
 
           {/* Cards */}
           <div className='lg:flex gap-10'>
-          <div className=' font-productsans text-center p-10 rounded-xl my-10 flex-1 border-teal-600 border-4 dark:border-teal-400'>
+          <div className=' font-productsans text-center p-5 rounded-xl my-10 flex-1 border-teal-600 border-4 dark:border-teal-400'>
             <div className='flex justify-center'>
             <Image src={lang} width={100} height={100}/>
             </div>
             <h3 className=' text-xl text-teal-600 pt-8 pb-2 dark:text-teal-400'>Languages Known</h3>
             <p className='py-2 dark:text-white'>
-              Some of the languages I use often and .. not so often.
+              Using multitudes of languages to accomplish tasks and leveraging best features of each one!
             </p>
 
-            <div className='flex gap-5'>
+            <div className='container mx-auto font-productsans'>
+              <div className=' grid-cols-2 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
+                  {/* <div className=' w-full col-span-3 rounded-sm'>
+                  <img height="32" width="32" src="https://cdn.simpleicons.org/python/3776AB" />
+                  <p>Python</p>
+                  </div> */}
+
+                  <div className=' text-center p-5 rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1'>
+                    <div className='flex justify-center mb-2'>
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/python/3776AB" />
+                    </div>
+                    <p>Python</p>
+                  </div>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 basis-1/3' >
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/kotlin/7F52FF" />
+                    </div>
+                    <p className='pb-2' >Kotlin</p>
+                  </div>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 basis-1/3'>
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/javascript/F7DF1E" />
+                    </div>
+                    <p className='pb-2'>JavaScript</p>
+                  </div>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 px-5 basis-1/3'>
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/sqlite/003B57" />
+                    </div>
+                    <p className='pb-2'>SQL</p>
+                  </div>
+
+              </div>
+
+
+            </div>
+
+            {/* <div className='flex gap-5'>
             <div className='font-productsans text-center p-5 rounded-lg my-5 border-4 border-slate-700  dark:bg-slate-500 flex-1'>
               <div className='flex justify-center mb-2'>
                   <img height="32" width="32" src="https://cdn.simpleicons.org/python/3776AB" />
@@ -125,36 +167,124 @@ export default function Home() {
               </div>
               <p>TypeScript</p>
             </div>
-            </div>
+            </div> */}
             
           </div>
 
-          <div className=' font-productsans text-center  p-10 rounded-xl my-10 border-4 flex-1 border-teal-600 dark:border-teal-400'>
+          <div className=' font-productsans text-center  p-5 rounded-xl my-10 border-4 flex-1 border-teal-600 dark:border-teal-400'>
             <div className='flex justify-center'>
             <Image src={machine} width={100} height={100}/>
             </div>
-            <h3 className=' text-xl text-teal-600 pt-8 pb-2'>Frameworks</h3>
-            <p className='py-2'>
+            <h3 className=' text-xl text-teal-600 pt-8 pb-2 dark:text-teal-400'>Frameworks</h3>
+            <p className='py-2 dark:text-white'>
               Set of libraries and techniques I use to implement and develop machine learning models.
             </p>
-            <h4 className='  py-4'>Frameworks I use</h4>
-            <p className=' text-gray-800 py-1'>TensorFlow</p>
-            <p>PyTorch</p>
-            <p>Google Colab</p>
+
+            <div className='container mx-auto font-productsans'>
+              <div className=' grid-cols-3 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 basis-1/3' >
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/tensorflow/FF6F00" />
+                    </div>
+                    <p className='pb-2' >TensorFlow</p>
+                  </div>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 basis-1/3' >
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/pytorch/EE4C2C" />
+                    </div>
+                    <p className='pb-2' >PyTorch</p>
+                  </div>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 basis-1/3'>
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/scikitlearn/F7931E" />
+                    </div>
+                    <p className='pb-2'>Scikit-Learn</p>
+                  </div>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 px-5 basis-1/3'>
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/firebase/FFCA28" />
+                    </div>
+                    <p className='pb-2'>Firebase</p>
+                  </div>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 px-5 basis-1/3'>
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/react/#61DAFB" />
+                    </div>
+                    <p className='pb-2'>React</p>
+                  </div>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 px-5 basis-1/3'>
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/nodedotjs/339933" />
+                    </div>
+                    <p className='pb-2'>NodeJS</p>
+                  </div>
+
+              </div>
+              </div>
           </div>
 
-          <div className=' font-productsans text-center  p-10 rounded-xl my-10 border-4 flex-1 border-teal-600 dark:border-teal-400'>
+          <div className=' font-productsans text-center  p-5 rounded-xl my-10 border-4 flex-1 border-teal-600 dark:border-teal-400'>
             <div className='flex justify-center'>
             <Image src={tools} width={100} height={100}/>
             </div>
-            <h3 className=' text-lg pt-8 pb-2'>Tools</h3>
-            <p className='py-2'>
-              Tools I use for various tasks such as data pre-processing, visualization, model development and deployment.
+            <h3 className=' text-xl text-teal-600 pt-8 pb-2 dark:text-teal-400'>Tools</h3>
+            <p className='py-2 dark:text-white'>
+              Tools for  data pre-processing, visualization, model development and deployment.
             </p>
-            <h4 className=' text-teal-600 py-4'>Frameworks and Tools I use</h4>
+
+            <div className='container ml-auto font-productsans'>
+              <div className=' grid-cols-3 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full col-span-2'>
+                    <div className='flex justify-center mb-2 mt-5 basis-1/3' >
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/jupyter/F37626" />
+                    </div>
+                    <p className='pb-2' >Jupyter Notebook</p>
+                  </div>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 basis-1/3'>
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/googlecolab/F9AB00" />
+                    </div>
+                    <p className='pb-2'>Colab</p>
+                  </div>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 basis-1/3' >
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/android/3DDC84" />
+                    </div>
+                    <p className='pb-2' >Studio</p>
+                  </div>
+
+                  
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 px-5 basis-1/3'>
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/anaconda/44A833" />
+                    </div>
+                    <p className='pb-2'>Anaconda</p>
+                  </div>
+
+                  <div className=' text-center rounded-lg border-4 border-slate-700  dark:bg-slate-500 flex-1 w-full'>
+                    <div className='flex justify-center mb-2 mt-5 px-5 basis-1/3'>
+                      <img height="32" width="32" src="https://cdn.simpleicons.org/git/F05032" />
+                    </div>
+                    <p className='pb-2'>Git</p>
+                  </div>
+
+              </div>
+              </div>
+
+            {/* <h4 className=' text-teal-600 py-4'>Frameworks and Tools I use</h4>
             <p className=' text-gray-800 py-1'>TensorFlow</p>
             <p>PyTorch</p>
-            <p>Google Colab</p>
+            <p>Google Colab</p> */}
           </div>
           </div>
           
