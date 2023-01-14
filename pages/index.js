@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="icon" href={`${process.env.NEXT_PUBLIC_FAVICON}/favicon.ico`}/>
       </Head>
       <SideNavBar/>
-      <main className=' bg-white px-10 md:px-20 lg:ml-60 lg:px-40 dark:bg-[#1f1f1f]'>
+      <main className=' bg-white px-10 md:px-20 lg:ml-20 lg:px-40 dark:bg-[#1f1f1f]'>
 
         {/* HOMEPAGE SECTION */}
 
