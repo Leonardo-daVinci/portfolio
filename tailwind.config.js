@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
 
   darkMode: "class",
@@ -12,6 +14,18 @@ module.exports = {
       fontFamily: {
         productsans: "productsans",
       }
+    },
+    colors: {
+      teal: colors.teal,
+      white: colors.white,
+      cyan: colors.cyan,
+      gray: colors.gray,
+      'my-text-light': '#0b57d0',
+      'my-text-dark': '#a8c7fa',
+      'card-light': '#f8fafd',
+      'card-dark': '#28292a',
+      'hover-bg-light': '#c2e7ff',
+      'hover-bg-dark': '#004a77',
     },
   },
   plugins: [],
