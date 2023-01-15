@@ -37,14 +37,14 @@ function SideNavBar(){
                         <a href='#home'>
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
                         <AiOutlineHome className=' text-2xl text-gray-800 w-full dark:text-white' />
-                        <h3 className='text-base text-gray-800 dark:text-white'>Home</h3>
+                        <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Home</h3>
                         </div>
                         </a>
 
                         <a href='#my-skills'>
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
                         <GiBrain className=' text-2xl text-gray-800  w-full dark:text-white' />
-                        <h3 className='text-base text-gray-800  dark:text-white'>Skills</h3>
+                        <h3 className='text-base font-productsans text-gray-800  dark:text-white'>Skills</h3>
                         </div>
                         </a>
                         
@@ -59,18 +59,18 @@ function SideNavBar(){
                         <a href='#my-projects'>
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
                         <GiOpenFolder className=' text-2xl text-gray-800 dark:text-white w-full' />
-                        <h3 className='text-base text-gray-800 dark:text-white '>Portfolio</h3>
+                        <h3 className='text-base font-productsans text-gray-800 dark:text-white '>Portfolio</h3>
                         </div>
                         </a>
 
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
                         <MdOutlineTimeline className=' text-2xl text-gray-800 dark:text-white w-full' />
-                        <h3 className='text-base text-gray-800 dark:text-white'>Timeline</h3>
+                        <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Timeline</h3>
                         </div>
 
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
                         <MdOutlineNotes className=' text-2xl text-gray-800 w-full dark:text-white' />
-                        <h3 className='text-base text-gray-800 dark:text-white'>Blog</h3>
+                        <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Blog</h3>
                         </div>
                     </div>
 

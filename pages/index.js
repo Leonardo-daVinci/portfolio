@@ -14,6 +14,8 @@ import web2 from '../public/web2.png'
 import {useState} from 'react'
 import Link from 'next/link'
 import SideNavBar from '../components/SideNavbar'
+import Chips from '../components/Chips'
+import Blocks from '../components/Blocks'
 
 export default function Home() {
 
@@ -101,48 +103,20 @@ export default function Home() {
 
             <div className='container mx-auto font-productsans'>
               <div className=' grid-cols-2 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
-                  {/* <div className=' w-full col-span-3 rounded-sm'>
-                  <img height="32" width="32" src="https://cdn.simpleicons.org/python/3776AB" />
-                  <p>Python</p>
-                  </div> */}
-
-                  <div className=' text-center p-5 rounded-lg bg-hover-bg-light group-hover:bg-card-light dark:bg-slate-500 flex-1'>
-                    <div className='flex justify-center mb-2'>
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/python/3776AB" />
-                    </div>
-                    <p>Python</p>
-                  </div>
-
-                  <div className=' text-center rounded-lg bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 basis-1/3' >
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/kotlin/7F52FF" />
-                    </div>
-                    <p className='pb-2' >Kotlin</p>
-                  </div>
-
-                  <div className=' text-center rounded-lg bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 basis-1/3'>
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/javascript/F7DF1E" />
-                    </div>
-                    <p className='pb-2'>JavaScript</p>
-                  </div>
-
-                  <div className=' text-center rounded-lg bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 px-5 basis-1/3'>
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/sqlite/003B57" />
-                    </div>
-                    <p className='pb-2'>SQL</p>
-                  </div>
+                  
+                  <Blocks skill="Python" image="https://cdn.simpleicons.org/python/3776AB" />
+                  <Blocks skill="Kotlin" image="https://cdn.simpleicons.org/kotlin/7F52FF" />
+                  <Blocks skill="JavaScript" image="https://cdn.simpleicons.org/javascript/F7DF1E" />
+                  <Blocks skill="SQL" image="https://cdn.simpleicons.org/sqlite/003B57" />
 
               </div>
-
-
             </div>
             
           </div>
 
           <div className=' font-productsans text-center  p-5 rounded-xl my-10 flex-1 group
-           bg-card-light hover:bg-hover-bg-light dark:border-teal-400'>
+           bg-card-light hover:bg-hover-bg-light
+            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
             <div className='flex justify-center'>
             <Image src={machine} width={100} height={100}/>
             </div>
@@ -154,54 +128,27 @@ export default function Home() {
             <div className='container mx-auto font-productsans'>
               <div className=' grid-cols-3 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
 
-                  <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
+                  {/* <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
                     <div className='flex justify-center mb-2 mt-5 basis-1/3' >
                       <img height="32" width="32" src="https://cdn.simpleicons.org/tensorflow/FF6F00" />
                     </div>
                     <p className='pb-2' >TensorFlow</p>
-                  </div>
+                  </div> */}
 
-                  <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 basis-1/3' >
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/pytorch/EE4C2C" />
-                    </div>
-                    <p className='pb-2' >PyTorch</p>
-                  </div>
-
-                  <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 basis-1/3'>
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/scikitlearn/F7931E" />
-                    </div>
-                    <p className='pb-2'>Scikit-Learn</p>
-                  </div>
-
-                  <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 px-5 basis-1/3'>
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/firebase/FFCA28" />
-                    </div>
-                    <p className='pb-2'>Firebase</p>
-                  </div>
-
-                  <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 px-5 basis-1/3'>
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/react/#61DAFB" />
-                    </div>
-                    <p className='pb-2'>React</p>
-                  </div>
-
-                  <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 px-5 basis-1/3'>
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/nodedotjs/339933" />
-                    </div>
-                    <p className='pb-2'>NodeJS</p>
-                  </div>
+                  <Blocks skill="TensorFlow" image="https://cdn.simpleicons.org/tensorflow/FF6F00"/>
+                  <Blocks skill="PyTorch" image="https://cdn.simpleicons.org/pytorch/EE4C2C" />
+                  <Blocks skill="Scikit-Learn" image="https://cdn.simpleicons.org/scikitlearn/F7931E" />
+                  <Blocks skill="Firebase" image="https://cdn.simpleicons.org/firebase/FFCA28" />
+                  <Blocks skill="React" image="https://cdn.simpleicons.org/react/61DAFB" />
+                  <Blocks skill="NodeJS" image="https://cdn.simpleicons.org/nodedotjs/339933" />
 
               </div>
               </div>
           </div>
 
           <div className=' font-productsans text-center  p-5 rounded-xl my-10 flex-1 group
-           bg-card-light hover:bg-hover-bg-light  dark:border-teal-400'>
+           bg-card-light hover:bg-hover-bg-light 
+           dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
             <div className='flex justify-center'>
             <Image src={tools} width={100} height={100}/>
             </div>
@@ -213,42 +160,19 @@ export default function Home() {
             <div className='container ml-auto font-productsans'>
               <div className=' grid-cols-3 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
 
-                  <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full col-span-2'>
+                  <div className=' text-center rounded-lg flex-1 w-full col-span-2
+                  bg-hover-bg-light group-hover:bg-card-light  
+                  dark:bg-hover-bg-dark dark:group-hover:bg-hover-bg-light dark:group-hover:text-gray-700'>
                     <div className='flex justify-center mb-2 mt-5 basis-1/3' >
                       <img height="32" width="32" src="https://cdn.simpleicons.org/jupyter/F37626" />
                     </div>
                     <p className='pb-2' >Jupyter Notebook</p>
                   </div>
 
-                  <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 basis-1/3'>
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/googlecolab/F9AB00" />
-                    </div>
-                    <p className='pb-2'>Colab</p>
-                  </div>
-
-                  <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 basis-1/3' >
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/android/3DDC84" />
-                    </div>
-                    <p className='pb-2' >Studio</p>
-                  </div>
-
-                  
-
-                  <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 px-5 basis-1/3'>
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/anaconda/44A833" />
-                    </div>
-                    <p className='pb-2'>Anaconda</p>
-                  </div>
-
-                  <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 px-5 basis-1/3'>
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/git/F05032" />
-                    </div>
-                    <p className='pb-2'>Git</p>
-                  </div>
+                  <Blocks skill="Studio" image="https://cdn.simpleicons.org/android/3DDC84" />
+                  <Blocks skill="Colab" image="https://cdn.simpleicons.org/googlecolab/F9AB00" />
+                  <Blocks skill="Anaconda" image="https://cdn.simpleicons.org/anaconda/44A833" />
+                  <Blocks skill="Git" image="https://cdn.simpleicons.org/git/F05032" />
 
               </div>
               </div>
@@ -266,46 +190,57 @@ export default function Home() {
         <section>
           
           <div id="my-projects" className=' font-productsans'>
-          <h3 className=' text-3xl py-1 dark:text-white'>Portfolio</h3>
-          <p className=' text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>Some description about the projects</p>
+          <h3 className=' text-5xl pt-10 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark '>Portfolio</h3>
+          <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'>
+          As a Machine Learning Engineer, my projects include a wide range of applications of ML techniques - computer vision, natural language processing, prediction, and reinforcement learning.
+          Along with these, I enjoy building mobile applications and webapps using popular frameworks like React.  
+          <br></br>
+          These following projects highlight my ability to apply my knowledge to real-world problems and to deliver value to business and organizations.
+          </p>
           </div>
 
           <div className=' font-productsans flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             
             {/* Multi-camera Surveillance */}
-            <div className=' basis-1/3 flex-1 border-4 border-teal-600 dark:border-teal-400 rounded-lg'>
-              <Image src={vigil} className=" rounded-b-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+            <div className=' basis-1/3 flex-1 group bg-card-light rounded-lg hover:bg-hover-bg-light
+            dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+              <Image src={vigil} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
               <div className=' px-4 py-4'>
-                <h3 className="text-xl text-gray-800 dark:text-white">Multi-Camera Surveillance System</h3>
+
+              <Chips category="Machine Learning" />
+              <Chips category="Python" />
+
+              <h3 className="text-xl pt-4 text-gray-800 dark:text-white">Multi-Camera Surveillance System</h3>
               <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
-              <button className='rounded-full border-2 text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white p-2
-               dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>Machine Learning</button>
-              <button className='rounded-full mx-2 border-2 text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white p-2
-               dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>Python</button>
               </div>
             </div>
 
-            <div className=' basis-1/3 flex-1 border-4 border-teal-600 dark:border-teal-400 rounded-lg'>
-              <Image src={amazon} className=" rounded-b-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+            <div className=' basis-1/3 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
+             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+              <Image src={amazon} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
               <div className=' px-4 py-4'>
-                <h3 className="text-xl text-gray-800 dark:text-white">Amazon React Clone</h3>
+
+                <Chips category="React" />
+                <Chips category="Firebase" />
+                <Chips category="JavaScript" />
+
+                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">Amazon React Clone</h3>
               <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
-              <button className='rounded-full border-2 text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white p-2
-               dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>React</button>
-               <button className='rounded-full ml-2 border-2 text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white p-2
-               dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>Firebase</button>
-              <button className='rounded-full ml-2 border-2 text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white p-2
-               dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>JavaScript</button>
+              
               </div>
             </div>
 
-            <div className=' basis-1/3 flex-1 border-4 border-teal-600 dark:border-teal-400 rounded-lg'>
-              <Image src={fashion} className=" rounded-b-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+            <div className='basis-1/3 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
+             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+              <Image src={fashion} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
               <div className=' px-4 py-4'>
-                <h3 className="text-xl text-gray-800 dark:text-white">H and M Fashion Recommendation System</h3>
+
+                <Chips category="Machine Learning" />
+                <Chips category="Python" />
+
+                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">H and M Fashion Recommendation System</h3>
               <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
-              <button className='rounded-full border-2 text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white p-2
-               dark:border-teal-400 dark:hover:bg-teal-400 dark:text-teal-400 dark:hover:text-white'>Python</button>
+              
               </div>
             </div>
 
