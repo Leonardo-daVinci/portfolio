@@ -16,6 +16,7 @@ import Link from 'next/link'
 import SideNavBar from '../components/SideNavbar'
 import Chips from '../components/Chips'
 import Blocks from '../components/Blocks'
+import Course from '../components/Course'
 
 export default function Home() {
 
@@ -251,6 +252,102 @@ export default function Home() {
           </div>
           
         </section>
+
+        {/* EDUCATION */}
+        <section>
+        <div id="my-skills" className=' font-productsans pt-10'>
+              <h3 className=' text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Academic background</h3>
+              <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
+                Summary of my Masters Degree <span>&#40;</span>ongoing<span>&#41;</span> and Bachelors Degree.
+              </p>
+          </div>
+
+          <div className=' font-productsans flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap'>
+          
+          
+            <div className=' basis-1/3 flex-1 group bg-card-light rounded-lg hover:bg-hover-bg-light
+            dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+              
+              <div className=' px-4 py-4 text-center'>
+              <h3 className="text-2xl pt-4 text-gray-800 dark:text-white">Masters in Computer Science</h3>
+              <p className='text-xl pb-4 dark:text-white'>University of Southern California, Los Angeles, US</p>
+              </div>
+              <div className='container mx-auto font-productsans'>
+                <div className=' grid-cols-1 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
+
+                <Course 
+                  id="DSCI-552" name="Machine Learning for Data Science"
+                  des="Practical applications of machine learning techniques to real-world problems. 
+                  Uses in data mining and recommendation systems and for building adaptive user interfaces."
+                  prof="Prof. Mohammad Reza Rajati"
+                />
+
+                <Course 
+                  id="CSCI-585" name="Database Systems"
+                  des="Database system architecture, conceptual database models - semantic, object-oriented, logic-based, and relational databases, 
+                  user and program interfaces,  database system implementation, integrity, security, concurrency and recovery. 
+                  Requires  Knowledge of relational databases, SQL, relational algebra and physical database design."
+                  prof="Prof. Sathyanaraya Raghavachary"
+                />
+
+                <Course 
+                  id="CSCI-544" name="Applied Natural Language Processing"
+                  des="Introduction to key components of human language technologies, including information extraction, sentiment analysis, question answering, machine translation."
+                  prof="Prof. Ron Artstein and Prof. Mohammad Rostami"
+                />
+
+                <Course 
+                  id="CSCI-567" name="Machine Learning"
+                  des="Statistical methods for building intelligent and adaptive systems that improve performance from experiences. 
+                  Focus on theoretical understanding of these methods and their computational implications. 
+                  Requires Undergraduate level training or coursework in linear algebra, multivariate calculus, basic probability and statistics"
+                  prof="Prof. Yan Liu"
+                />
+
+                <Course 
+                  id="CSCI-571" name="Web Technologies"
+                  des="Advanced study of programming languages with application to the Web. Languages for client-side and server-side processing. 
+                  Examples taken from: HTML, Java, JavaScript, Perl, XML and others"
+                  prof="Prof. Marco Papa"
+                />
+
+                <Course 
+                  id="CSCI-561" name="Foundations of Artificial Intelligence"
+                  des="Foundations of symbolic intelligent systems, search, logic, knowledge representation, planning, learning."
+                  prof="Prof. Wei-Min Shen"
+                />
+
+                <Course 
+                  id="CSCI-570" name="Analysis of Algorithms"
+                  des="Explores fundamental techniques such as recursion, Fourier transform ordering, dynamic programming for efficient algorithm construction. 
+                  Examples include arithmetic, algebraic, graph, pattern matching, sorting, searching algorithms."
+                  prof="Prof. Shahriar Shamsian"
+                />
+                  
+
+                </div>
+              </div>
+            </div>
+
+            <div className=' basis-1/3 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
+             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+              
+              <div className=' px-4 py-4'>
+
+                <Chips category="React" />
+                <Chips category="Firebase" />
+                <Chips category="JavaScript" />
+
+                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">Amazon React Clone</h3>
+              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
+              
+              </div>
+            </div>
+            </div>
+          
+
+        </section>
+
 
         {/* <section>
           <div className=' text-center p-10 font-productsans'>

@@ -68,10 +68,12 @@ function SideNavBar(){
                         <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Timeline</h3>
                         </div>
 
+                        <a href='https://keoliya.hashnode.dev/' target="_blank">
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
                         <MdOutlineNotes className=' text-2xl text-gray-800 w-full dark:text-white' />
                         <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Blog</h3>
                         </div>
+                        </a>
                     </div>
 
                     {/* <div className='my-4 '>
