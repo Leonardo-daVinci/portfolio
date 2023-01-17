@@ -11,7 +11,7 @@ function Course({id, name, prof, des}){
 
             <div className=' text-center rounded-lg flex justify-start m-auto items-center p-5
                 bg-white group-hover:bg-card-light  
-                dark:bg-card-dark dark:hover:text-gray-700
+                dark:bg-[#1f1f1f] dark:hover:text-gray-700
                 dark:group-hover:bg-card-dark
                 peer-checked:rounded-b-none
                 transition-all duration-500
@@ -23,22 +23,21 @@ function Course({id, name, prof, des}){
 
             <div className=' absolute top-7 right-7
                  text-gray-700 text-2xl
+                 dark:text-white
                  transition-transform duration-500 rotate-0 peer-checked:rotate-180'>
                 <AiOutlineCaretDown />
             </div>
 
             <div className=' bg-white rounded-b-lg
             overflow-hidden transition-all duration-500
-                 max-h-0 peer-checked:max-h-60
+                 max-h-0 peer-checked:max-h-80
                  dark:bg-[#1f1f1f] dark:text-white'>
 
                   <div className=' p-4 text-lg'>
-                    <p>
                     {des}
-                    </p>
-                    <p className=" py-2">
-                        Taught by <span className=" text-my-text-light dark:text-my-text-dark">{prof}</span>
-                    </p>
+                    <div className=" py-2">
+                        {prof}
+                    </div>
 
                   </div>
                 </div>

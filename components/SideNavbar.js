@@ -11,8 +11,14 @@ import {
     GiHomeGarage
 } from "react-icons/gi"
 import {
-    AiOutlineHome
+    AiFillHome
 } from "react-icons/ai"
+import {
+    HiAcademicCap
+} from "react-icons/hi"
+import {
+    FaBrain
+} from "react-icons/fa"
 
 
 function SideNavBar(){
@@ -36,14 +42,14 @@ function SideNavBar(){
                     <div className='my-4 pb-4'>
                         <a href='#home'>
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
-                        <AiOutlineHome className=' text-2xl text-gray-800 w-full dark:text-white' />
+                        <AiFillHome className=' text-2xl text-gray-800 w-full dark:text-white' />
                         <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Home</h3>
                         </div>
                         </a>
 
                         <a href='#my-skills'>
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
-                        <GiBrain className=' text-2xl text-gray-800  w-full dark:text-white' />
+                        <FaBrain className=' text-2xl text-gray-800  w-full dark:text-white' />
                         <h3 className='text-base font-productsans text-gray-800  dark:text-white'>Skills</h3>
                         </div>
                         </a>
@@ -64,8 +70,8 @@ function SideNavBar(){
                         </a>
 
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
-                        <MdOutlineTimeline className=' text-2xl text-gray-800 dark:text-white w-full' />
-                        <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Timeline</h3>
+                        <HiAcademicCap className=' text-2xl text-gray-800 dark:text-white w-full' />
+                        <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Study</h3>
                         </div>
 
                         <a href='https://keoliya.hashnode.dev/' target="_blank">
