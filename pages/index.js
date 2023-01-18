@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai'
+import {BsArrowRight} from "react-icons/bs"
 import Image from 'next/image'
 import avatar from '../public/dev-ed-wave.png'
 import lang from '../public/lang.png'
@@ -249,7 +250,7 @@ export default function Home() {
 
         {/* EDUCATION */}
         <section>
-        <div id="my-skills" className=' font-productsans pt-10'>
+        <div id="my-academics" className=' font-productsans pt-10'>
               <h3 className=' text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Academic background</h3>
               <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
                 Summary of my Masters Degree <span>&#40;</span>ongoing<span>&#41;</span> and Bachelors Degree.
@@ -431,7 +432,7 @@ export default function Home() {
             
           </div>
 
-          <div className=' font-productsans pt-10'>
+          <div id="my-merits" className=' font-productsans pt-10'>
               <h3 className=' text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Certifications and Achievements</h3>
               <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
                 This section includes certifications in machine learning, deep learning and data science, recognition in hackathons, competitions and DevFests, and awards and publications.
@@ -440,6 +441,16 @@ export default function Home() {
           </div>
 
           <Carousel />
+
+          <div className=' flex justify-end'>
+          <div className='font-productsans text-center rounded-2xl my-5 group p-5 w-1/2
+          flex items-center
+           bg-card-light hover:bg-hover-bg-light
+            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+            <h3 className=' text-2xl'>View all certifications, achievements and participations here</h3>
+            <BsArrowRight className=' text-2xl ml-5'/>
+            </div>
+          </div>
 
 
           

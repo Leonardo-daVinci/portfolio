@@ -17,7 +17,8 @@ import {
     HiAcademicCap
 } from "react-icons/hi"
 import {
-    FaBrain
+    FaBrain,
+    FaCertificate
 } from "react-icons/fa"
 
 
@@ -69,10 +70,19 @@ function SideNavBar(){
                         </div>
                         </a>
 
+                        <a href="#my-academics">
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
                         <HiAcademicCap className=' text-2xl text-gray-800 dark:text-white w-full' />
                         <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Study</h3>
                         </div>
+                        </a>
+
+                        <a href="#my-merits">
+                        <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
+                        <FaCertificate className=' text-2xl text-gray-800 dark:text-white w-full' />
+                        <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Merits</h3>
+                        </div>
+                        </a>
 
                         <a href='https://keoliya.hashnode.dev/' target="_blank">
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
