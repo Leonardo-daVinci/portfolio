@@ -30,7 +30,7 @@ function Course({id, name, prof, des}){
 
             <div className=' bg-white rounded-b-lg
             overflow-hidden transition-all duration-500
-                 max-h-0 peer-checked:max-h-80
+                 max-h-0 peer-checked:max-h-96
                  dark:bg-[#1f1f1f] dark:text-white'>
 
                   <div className=' p-4 text-lg'>

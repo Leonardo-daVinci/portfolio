@@ -9,14 +9,13 @@ import tools from '../public/tools.png'
 import amazon from "../public/amazon-clone.png"
 import fashion from "../public/hm-fashion.png"
 import vigil from "../public/vigil-system.png"
-import web1 from '../public/web1.png'
-import web2 from '../public/web2.png'
 import {useState} from 'react'
 import Link from 'next/link'
 import SideNavBar from '../components/SideNavbar'
 import Chips from '../components/Chips'
 import Blocks from '../components/Blocks'
 import Course from '../components/Course'
+import Carousel from '../components/Carousel'
 
 export default function Home() {
 
@@ -203,7 +202,7 @@ export default function Home() {
           <div className=' font-productsans flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             
             {/* Multi-camera Surveillance */}
-            <div className=' basis-1/3 flex-1 group bg-card-light rounded-lg hover:bg-hover-bg-light
+            <div className=' basis-1/4 flex-1 group bg-card-light rounded-lg hover:bg-hover-bg-light
             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
               <Image src={vigil} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
               <div className=' px-4 py-4'>
@@ -216,7 +215,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className=' basis-1/3 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
+            <div className=' basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
              dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
               <Image src={amazon} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
               <div className=' px-4 py-4'>
@@ -231,7 +230,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className='basis-1/3 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
+            <div className='basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
              dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
               <Image src={fashion} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
               <div className=' px-4 py-4'>
@@ -243,11 +242,6 @@ export default function Home() {
               <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
               
               </div>
-            </div>
-
-
-            <div className=' basis-1/3 flex-1'>
-              <Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
             </div>
           </div>
           
@@ -263,7 +257,6 @@ export default function Home() {
           </div>
 
           <div className=' font-productsans flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap'>
-          
           
             <div className=' basis-1/3 flex-1 group bg-card-light rounded-lg hover:bg-hover-bg-light
             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
@@ -435,9 +428,20 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             
           </div>
+
+          <div className=' font-productsans pt-10'>
+              <h3 className=' text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Certifications and Achievements</h3>
+              <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
+                This section includes certifications in machine learning, deep learning and data science, recognition in hackathons, competitions and DevFests, and awards and publications.
+                 <br></br>  It showcases my dedication to continuously learn and improve my skills.
+              </p>
+          </div>
+
+          <Carousel />
+
+
           
 
         </section>
