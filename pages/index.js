@@ -2,14 +2,27 @@ import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai'
 import {BsArrowRight} from "react-icons/bs"
+
 import Image from 'next/image'
 import avatar from '../public/dev-ed-wave.png'
+
 import lang from '../public/lang.png'
 import machine from '../public/machine.png'
 import tools from '../public/tools.png'
+
 import amazon from "../public/amazon-clone.png"
 import fashion from "../public/hm-fashion.png"
 import vigil from "../public/vigil-system.png"
+
+import gdc from "../public/gdc-logo.png"
+
+import reading from "../public/reading.png"
+import gym from "../public/physical-activity.png"
+import french from "../public/french.png"
+import muay from "../public/muay-thai.png"
+import dance from "../public/dancing.png"
+import art from "../public/digital-art.png"
+
 import {useState} from 'react'
 import Link from 'next/link'
 import SideNavBar from '../components/SideNavbar'
@@ -17,6 +30,7 @@ import Chips from '../components/Chips'
 import Blocks from '../components/Blocks'
 import Course from '../components/Course'
 import Carousel from '../components/Carousel'
+import Bullet from '../components/Bullet'
 
 export default function Home() {
 
@@ -245,6 +259,18 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <a href='https://github.com/Leonardo-daVinci' target="_blank">
+          <div className=' flex justify-end'>
+          <div className='font-productsans text-center rounded-2xl mb-10 group p-5 lg:w-1/2
+          flex items-center
+           bg-card-light hover:bg-hover-bg-light
+            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+            <h3 className='text-center w-full text-2xl'>View all my projects and their code here</h3>
+            <BsArrowRight className=' text-2xl ml-5'/>
+            </div>
+          </div>
+          </a>
           
         </section>
 
@@ -431,7 +457,10 @@ export default function Home() {
             </div>
             
           </div>
+          </section>
 
+            {/* MERITS */}
+          <section>
           <div id="my-merits" className=' font-productsans pt-10'>
               <h3 className=' text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Certifications and Achievements</h3>
               <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
@@ -443,17 +472,154 @@ export default function Home() {
           <Carousel />
 
           <div className=' flex justify-end'>
-          <div className='font-productsans text-center rounded-2xl my-5 group p-5 w-1/2
+          <div className='font-productsans text-center rounded-2xl mb-10 group p-5 w-1/2
           flex items-center
            bg-card-light hover:bg-hover-bg-light
             dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-            <h3 className=' text-2xl'>View all certifications, achievements and participations here</h3>
+            <h3 className='text-center w-full text-2xl'>View all certifications, achievements and participations here</h3>
             <BsArrowRight className=' text-2xl ml-5'/>
             </div>
           </div>
+        </section>
+
+        
+        {/* EXTRAS */}
+        <section>
+        <div id="my-hobbies" className=' font-productsans pt-10'>
+              <h3 className=' text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Co-curricular Activities</h3>
+              <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
+                This section includes my involvement in student clubs, hobbies and other personal info. 
+              </p>
+          </div>
+
+          <div className='container mx-auto'>
+                  <div className='grid-cols-3 pt-10 space-y-2 lg:space-y-0 lg:grid lg:gap-5'>
+                      
+                      <div className=' font-productsans text-center p-5 rounded-xl flex-1 group
+                      bg-card-light hover:bg-hover-bg-light 
+                      dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+                        <div className='flex justify-center'>
+                        <Image src={gdc} width={100} height={100}/>
+                        </div>
+                        <h3 className=' text-2xl pt-8 pb-2'>Student Mentor</h3>
+                        <p className='py-2'>
+                          Google Developer Student Clubs <br></br>MES College of Engineering
+                        </p>
+                        </div>
+                        
+
+                      <div className=' font-productsans p-5 rounded-xl flex-1 group col-span-2 my-auto
+                      bg-card-light hover:bg-hover-bg-light 
+                      dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+                        
+                        <Bullet des="Taught students concepts of Deep Learning and implementation of Neural Networks in TensorFlow."/>
+                        <Bullet des="Directed students for building mobile applications in Android using Android Studio."/>
+                        <Bullet des="Conducted intercollege technical event for Google Cloud workshop and directed students in Machine Learning Track." />
+                        <Bullet des="Lead college team for Google's 'Build for India' competition." />
+
+                      </div>
+                  </div>
+            </div>
+
+            <div className='container mx-auto'>
+                  <div className='grid-cols-3 pt-5 space-y-2 lg:space-y-0 lg:grid lg:gap-5'>
+                      
+                      <div className=' font-productsans text-center p-5 rounded-xl flex-1 group
+                      bg-card-light hover:bg-hover-bg-light 
+                      dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+                        <div className='flex justify-center'>
+                        <Image src={lang} width={100} height={100}/>
+                        </div>
+                        <h3 className=' text-2xl pt-8 pb-2'>Director</h3>
+                        <p className='py-2'>
+                          Association of Indian Students <br></br> University of Southern California
+                        </p>
+                      </div>
+
+                      <div className=' font-productsans p-5 rounded-xl flex-1 group col-span-2
+                      bg-card-light hover:bg-hover-bg-light 
+                      dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+                        
+                        <Bullet des="Organized cultural events such as Diwali, Holi, Garba Night, etc. for over a thousand students in the university." />
+                        <Bullet des="Designed posters and other publicity campaign materials for the events above. " />
+                        <Bullet des="Represented India in the International Day Event organized by the university." />
+                        <Bullet des="Performed group dance for the events of Holi and Diwali." />
+
+                      </div>
+                  </div>
+            </div>
+
+            <div className=' font-productsans pt-10'>
+              <h3 className=' text-5xl pt-10 text-my-text-light md:text-4xl dark:text-my-text-dark'>Hobbies</h3>
+              <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
+              My hobbies section includes a variety of activities that I enjoy and that demonstrate my diverse interests. It provides a glimpse into my personality and demonstrates my ability to balance work and leisure.
+              </p>
+          </div>
+
+          <div className='container mx-auto'>
+                  <div className='grid-cols-3 pt-10 pb-20 space-y-2 lg:space-y-0 lg:grid lg:gap-5
+                  md:grid-cols-2 md:grid sm:grid-cols-2 sm:grid
+                  md:gap-2 sm:gap-2'>
+                      
+                      <div className=' font-productsans text-center p-5 rounded-xl flex-1 group
+                      bg-card-light hover:bg-hover-bg-light 
+                      dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+                        <div className='flex justify-center'>
+                        <Image src={reading} width={100} height={100}/>
+                        </div>
+                        <h3 className=' text-xl pt-4 pb-2'>Reading Science Fiction, Thriller books.</h3>
+                        </div>
+
+                        <div className=' font-productsans text-center p-5 rounded-xl flex-1 group
+                      bg-card-light hover:bg-hover-bg-light 
+                      dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+                        <div className='flex justify-center'>
+                        <Image src={gym} width={100} height={100}/>
+                        </div>
+                        <h3 className=' text-xl pt-4 pb-2'>Excercising at the Gym</h3>
+                        </div>
+
+                        <div className=' font-productsans text-center p-5 rounded-xl flex-1 group
+                      bg-card-light hover:bg-hover-bg-light 
+                      dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+                        <div className='flex justify-center'>
+                        <Image src={french} width={100} height={100}/>
+                        </div>
+                        <h3 className=' text-xl pt-4 pb-2'>Practicing speaking and writing French</h3>
+                        </div>
+
+                        <div className=' font-productsans text-center p-5 rounded-xl flex-1 group
+                      bg-card-light hover:bg-hover-bg-light 
+                      dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+                        <div className='flex justify-center'>
+                        <Image src={muay} width={100} height={100}/>
+                        </div>
+                        <h3 className=' text-xl pt-4 pb-2'>Learning martial arts form Muay Thai</h3>
+                        </div>
+
+                        <div className=' font-productsans text-center p-5 rounded-xl flex-1 group
+                      bg-card-light hover:bg-hover-bg-light 
+                      dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+                        <div className='flex justify-center'>
+                        <Image src={dance} width={100} height={100}/>
+                        </div>
+                        <h3 className=' text-xl pt-4 pb-2'>Participating in Group Dances</h3>
+                        </div>
+
+                        <div className=' font-productsans text-center p-5 rounded-xl flex-1 group
+                      bg-card-light hover:bg-hover-bg-light 
+                      dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+                        <div className='flex justify-center'>
+                        <Image src={art} width={100} height={100}/>
+                        </div>
+                        <h3 className=' text-xl pt-4 pb-2'>Calligraphy and making digital art</h3>
+                        </div>
+                        
+                  </div>
+            </div>
 
 
-          
+
 
         </section>
 

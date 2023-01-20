@@ -6,9 +6,8 @@ import {
 } from 'react-icons/md'
 import {
     GiHamburgerMenu,
-    GiBrain,
     GiOpenFolder,
-    GiHomeGarage
+    GiJigsawPiece
 } from "react-icons/gi"
 import {
     AiFillHome
@@ -81,6 +80,13 @@ function SideNavBar(){
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
                         <FaCertificate className=' text-2xl text-gray-800 dark:text-white w-full' />
                         <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Merits</h3>
+                        </div>
+                        </a>
+
+                        <a href="#my-hobbies">
+                        <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
+                        <GiJigsawPiece className=' text-2xl text-gray-800 dark:text-white w-full' />
+                        <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Extras</h3>
                         </div>
                         </a>
 
