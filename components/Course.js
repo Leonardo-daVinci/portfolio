@@ -18,19 +18,34 @@ function Course({id, name, prof, des}){
                 '>
             
                     <Chips category={id} />
-                    <p className=' px-5 text-xl text-gray-800 dark:text-white' >{name}</p>
+                    <p className='mx-auto pr-4
+                    lg:text-xl text-gray-800 dark:text-white
+                    md:text-md
+                    sm:text-md' >{name}</p>
+
+            <div className='
+                text-gray-700 text-2xl
+                lg:hidden
+                 dark:text-white
+                 transition-transform duration-500 rotate-0 
+                 peer-checked:rotate-180'>
+                <AiOutlineCaretDown />
             </div>
 
-            <div className=' absolute top-7 right-7
-                 text-gray-700 text-2xl
+            </div>
+
+            <div className='absolute lg:top-7 lg:right-7
+                hidden lg:block
+                text-gray-700 text-2xl
                  dark:text-white
                  transition-transform duration-500 rotate-0 peer-checked:rotate-180'>
                 <AiOutlineCaretDown />
             </div>
 
             <div className=' bg-white rounded-b-lg
-            overflow-hidden transition-all duration-500
-                 max-h-0 peer-checked:max-h-96
+            overflow-hidden transition-all duration-1000
+                 max-h-0 peer-checked:max-h-[110rem]
+
                  dark:bg-[#1f1f1f] dark:text-white'>
 
                   <div className=' p-4 text-lg'>

@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import {BsArrowRight} from "react-icons/bs"
+
 import Image from 'next/image'
 import coursera from "../public/coursera-logo.png"
 import devfest from "../public/devfest.png"
@@ -8,6 +9,9 @@ import intel from "../public/intel.png"
 import udacity from "../public/udacity.png"
 import unity from "../public/unity.png"
 import gcloud from "../public/gcloud.png"
+import certificate from "../public/certificate.png"
+import achieve from "../public/achievement.png"
+
 import Chips from "./Chips";
 import Certifications from "./Certifications";
 
@@ -27,7 +31,6 @@ function Carousel() {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true
           }
         },
         {
@@ -76,15 +79,17 @@ function Carousel() {
             <h3 className=' text-2xl pt-5 pb-2'>Certifications</h3>
             
             <div className=" flex justify-start m-auto items-center pb-5">
-            <p className='py-2 w-full ml-5
-            text-lg 
-            dark:text-white'>
-              These are some of my most recent certifications!
-            </p>
-            <BsArrowRight className=" text-2xl mx-5"/>
+                <p className='py-2 w-full ml-5
+                text-lg 
+                dark:text-white'>
+                These are some of my most recent certifications!
+                </p>
+                <BsArrowRight className=" text-2xl mx-5"/>
+                </div>
+                <div className='flex justify-center'>
+                    <Image src={certificate} width={100} height={100}/>
+                </div>
             </div>
-            
-          </div>
 
             {/* Coursera Certificate  1*/}
 
@@ -320,15 +325,17 @@ function Carousel() {
             <h3 className=' text-2xl pt-5 pb-2'>Achievements</h3>
             
             <div className=" flex justify-start m-auto items-center pb-5">
-            <p className='py-2 w-full ml-5
-            text-lg 
-            dark:text-white'>
-              Collection of my Achievements and Recognitions! 
-            </p>
-            <BsArrowRight className=" text-2xl mx-5"/>
+                <p className='py-2 w-full ml-5
+                text-lg 
+                dark:text-white'>
+                Collection of my Achievements and Recognitions! 
+                </p>
+                <BsArrowRight className=" text-2xl mx-5"/>
+                </div>
+                <div className='flex justify-center'>
+                    <Image src={achieve} width={100} height={100}/>
+                </div>
             </div>
-        
-          </div>
 
             {/* Devfest Achievement  1*/}
 

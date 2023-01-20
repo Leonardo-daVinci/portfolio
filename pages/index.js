@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai'
 import {BsArrowRight} from "react-icons/bs"
+// import pdf from "../public/Akshit_Resume.pdf"
 
 import Image from 'next/image'
 import avatar from '../public/dev-ed-wave.png'
@@ -45,11 +46,11 @@ export default function Home() {
         <link rel="icon" href={`${process.env.NEXT_PUBLIC_FAVICON}/favicon.ico`}/>
       </Head>
       <SideNavBar/>
-      <main className=' bg-white px-10 md:px-20 lg:ml-20 lg:px-40 dark:bg-[#1f1f1f]'>
+      <main className=' bg-white px-5 md:px-5 lg:ml-20 lg:px-40 dark:bg-[#1f1f1f]'>
 
         {/* HOMEPAGE SECTION */}
 
-        <section className='min-h-screen'>
+        <section className='min-h-screen md:min-h-fit'>
         
         {/* Navigation Section */}
         
@@ -57,12 +58,20 @@ export default function Home() {
           {/* <h1 className=' text-lg font-productsans'>Leonardo-daVinci</h1> */}
           <ul className='flex items-center'>
               <li><BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className=' cursor-pointer text-2xl'/></li>
-              <li><a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-productsans px-4 py-2 rounded-md ml-8' href='#'>Resume</a></li>
+              <li><a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-productsans px-4 py-2 rounded-md ml-8' 
+              href='/portfolio/Akshit_Resume.pdf' target="_blank" rel="noreferrer">
+                Resume</a></li>
           </ul>
         </nav>
 
           {/* Introduction */}
+
+          <div className=' flex justify-center items-center mx-auto md:mb-12 md:pb-10'>
+          <div className='hidden lg:block relative bg-gradient-to-b from-my-text-light to-my-text-dark rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96'>
+          <Image src={avatar} alt='Avatar' fill="true" objectFit='cover' loading='eager' />
+          </div>
           
+          <div>
           <div className=' text-center p-10 font-productsans'>
             <h2 className=' text-6xl py-2 text-my-text-light md:text-6xl dark:text-my-text-dark'>Akshit Abhay Keoliya</h2>
             <h3 className=' text-2xl py-2 md:text-3xl dark:text-white'>Machine Learning Enthusiast and Developer</h3>
@@ -82,10 +91,13 @@ export default function Home() {
             <a href='https://twitter.com/AkshitAbhay'><AiFillTwitterCircle /></a>
             <a href='https://www.instagram.com/machine.learning.chef'><AiFillInstagram /></a>
           </div>
+          </div>
+
+          </div>
 
           {/* Image */}
 
-          <div className=' relative mx-auto bg-gradient-to-b from-my-text-light to-my-text-dark rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
+          <div className='lg:hidden relative mx-auto bg-gradient-to-b from-my-text-light to-my-text-dark rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
           <Image src={avatar} alt='Avatar' fill="true" objectFit='cover' loading='eager' />
           </div>
 
@@ -116,8 +128,9 @@ export default function Home() {
               Using multitudes of languages to accomplish tasks and leveraging best features of each one!
             </p>
 
-            <div className='container mx-auto font-productsans'>
-              <div className=' grid-cols-2 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
+            <div className='container mx-auto font-productsans pt-5'>
+              <div className=' grid-cols-2 space-y-2 lg:space-y-0 grid gap-2
+              sm:grid-cols-2 md:grid-cols-2'>
                   
                   <Blocks skill="Python" image="https://cdn.simpleicons.org/python/3776AB" />
                   <Blocks skill="Kotlin" image="https://cdn.simpleicons.org/kotlin/7F52FF" />
@@ -141,7 +154,7 @@ export default function Home() {
             </p>
 
             <div className='container mx-auto font-productsans'>
-              <div className=' grid-cols-3 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
+              <div className=' lg:grid-cols-3 p-5 space-y-2 lg:space-y-0 grid gap-2 grid-cols-2 '>
 
                   {/* <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
                     <div className='flex justify-center mb-2 mt-5 basis-1/3' >
@@ -173,7 +186,7 @@ export default function Home() {
             </p>
 
             <div className='container ml-auto font-productsans'>
-              <div className=' grid-cols-3 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
+              <div className=' grid-cols-3 p-5 space-y-2 lg:space-y-0 grid gap-2'>
 
                   <div className=' text-center rounded-lg flex-1 w-full col-span-2
                   bg-hover-bg-light group-hover:bg-card-light  
@@ -363,9 +376,10 @@ export default function Home() {
                   id="BE" name="Final Year Engineering"
                   des={
                     <div className='container mx-auto font-productsans'>
-                        <div className=' grid-cols-2 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
-                          <p className=' text-2xl text-my-text-light dark:text-my-text-dark'>Semester 7</p>
-                          <p className='text-2xl text-my-text-light dark:text-my-text-dark'>Semester 8</p>
+                        <div className=' lg:grid-cols-2 p-2 space-y-2 lg:space-y-0 lg:grid lg:gap-2'>
+                          <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 7</p>
+                          <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 8</p>
+                          <p className='lg:hidden text-md text-my-text-light dark:text-my-text-dark'>Semester 7 and 8</p>
                           <p>Artificial Intelligence and Robotics</p>
                           <p>Machine Learning</p>
                           <p>Data Analytics</p>
@@ -386,8 +400,9 @@ export default function Home() {
                   des={
                     <div className='container mx-auto font-productsans'>
                         <div className=' grid-cols-2 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
-                        <p className=' text-2xl text-my-text-light dark:text-my-text-dark'>Semester 5</p>
-                          <p className='text-2xl text-my-text-light dark:text-my-text-dark'>Semester 6</p>
+                        <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 5</p>
+                          <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 6</p>
+                          <p className='lg:hidden text-md text-my-text-light dark:text-my-text-dark'>Semester 5 and 6</p>
                           <p>Theory of Computation</p>
                           <p>Design and Analysis of Algorithms</p>
                           <p>Database Management Systems</p>
@@ -408,8 +423,9 @@ export default function Home() {
                   des={
                     <div className='container mx-auto font-productsans'>
                         <div className=' grid-cols-2 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
-                        <p className=' text-2xl text-my-text-light dark:text-my-text-dark'>Semester 3</p>
-                          <p className='text-2xl text-my-text-light dark:text-my-text-dark'>Semester 4</p>
+                        <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 3</p>
+                          <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 4</p>
+                          <p className='lg:hidden text-md text-my-text-light dark:text-my-text-dark'>Semester 3 and 4</p>
                           <p>Discrete Mathematics</p>
                           <p>Engineering Mathematics III</p>
                           <p>Data Structures and Algorithms</p>
@@ -430,8 +446,9 @@ export default function Home() {
                   des={
                     <div className='container mx-auto font-productsans'>
                         <div className=' grid-cols-2 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
-                        <p className=' text-2xl text-my-text-light dark:text-my-text-dark'>Semester 1</p>
-                          <p className='text-2xl text-my-text-light dark:text-my-text-dark'>Semester 2</p>
+                        <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 1</p>
+                          <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 2</p>
+                          <p className='lg:hidden text-md text-my-text-light dark:text-my-text-dark'>Semester 1 and 2</p>
                         <p>Engineering Mathematics I</p>
                         <p>Engineering Mathematics II</p>
                         <p>Engineering Physics</p>
@@ -472,7 +489,7 @@ export default function Home() {
           <Carousel />
 
           <div className=' flex justify-end'>
-          <div className='font-productsans text-center rounded-2xl mb-10 group p-5 w-1/2
+          <div className='font-productsans text-center rounded-2xl mb-10 group p-5 lg:w-1/2
           flex items-center
            bg-card-light hover:bg-hover-bg-light
             dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
@@ -556,9 +573,10 @@ export default function Home() {
               </p>
           </div>
 
+          {/* Hobbies section */}
           <div className='container mx-auto'>
-                  <div className='grid-cols-3 pt-10 pb-20 space-y-2 lg:space-y-0 lg:grid lg:gap-5
-                  md:grid-cols-2 md:grid sm:grid-cols-2 sm:grid
+                  <div className='lg:grid-cols-3 pt-10 pb-20 space-y-2 lg:space-y-0 grid lg:gap-5
+                  grid-cols-2 gap-2
                   md:gap-2 sm:gap-2'>
                       
                       <div className=' font-productsans text-center p-5 rounded-xl flex-1 group
