@@ -337,7 +337,7 @@ export default function Home() {
 
           </div>
 
-          <a href='https://github.com/Leonardo-daVinci' target="_blank">
+          <a href='https://github.com/Leonardo-daVinci' target="_blank" rel="noreferrer">
           <div className=' flex justify-end'>
           <div className='font-productsans text-center rounded-2xl mb-10 group p-5 lg:w-1/2
           flex items-center

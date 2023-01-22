@@ -108,7 +108,7 @@ function Carousel() {
                 </p>
 
                 <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/1f8ea593b1c2ad611800a10e65337336" target="_blank">
+                    <a href="https://coursera.org/share/1f8ea593b1c2ad611800a10e65337336" target="_blank" rel="noreferrer">
                     <button className="py-2 px-6 
                     rounded-full border-2 border-my-text-light
                     text-my-text-light text-lg
@@ -136,7 +136,7 @@ function Carousel() {
                 </p>
 
                 <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/b5fea1b15974aa58b6e1233d10cb3dac" target="_blank">
+                    <a href="https://coursera.org/share/b5fea1b15974aa58b6e1233d10cb3dac" target="_blank" rel="noreferrer">
                     <button className="py-2 px-6 
                     rounded-full border-2 border-my-text-light
                     text-my-text-light text-lg
@@ -163,7 +163,7 @@ function Carousel() {
                 </p>
 
                 <div className="w-full flex justify-end p-4">
-                    <a href="https://www.cloudskillsboost.google/public_profiles/244b103e-debd-4b14-a0f6-90ebc3705404" target="_blank">
+                    <a href="https://www.cloudskillsboost.google/public_profiles/244b103e-debd-4b14-a0f6-90ebc3705404" target="_blank" rel="noreferrer">
                     <button className="py-2 px-6 
                     rounded-full border-2 border-my-text-light
                     text-my-text-light text-lg
@@ -191,7 +191,7 @@ function Carousel() {
                 </p>
 
                 <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/5df47f9480c647ddde06ac7a1437f0cf" target="_blank">
+                    <a href="https://coursera.org/share/5df47f9480c647ddde06ac7a1437f0cf" target="_blank" rel="noreferrer">
                     <button className="py-2 px-6 
                     rounded-full border-2 border-my-text-light
                     text-my-text-light text-lg
@@ -219,7 +219,7 @@ function Carousel() {
                 </p>
 
                 <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/d8438d9d4d830342f83649642936bdfd" target="_blank">
+                    <a href="https://coursera.org/share/d8438d9d4d830342f83649642936bdfd" target="_blank" rel="noreferrer">
                     <button className="py-2 px-6 
                     rounded-full border-2 border-my-text-light
                     text-my-text-light text-lg
@@ -247,7 +247,7 @@ function Carousel() {
                 </p>
 
                 <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/85833a94a7eeef74a2e8904914bc84de" target="_blank">
+                    <a href="https://coursera.org/share/85833a94a7eeef74a2e8904914bc84de" target="_blank" rel="noreferrer">
                     <button className="py-2 px-6 
                     rounded-full border-2 border-my-text-light
                     text-my-text-light text-lg
@@ -274,7 +274,7 @@ function Carousel() {
                 </p>
 
                 <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/85833a94a7eeef74a2e8904914bc84de" target="_blank">
+                    <a href="https://coursera.org/share/85833a94a7eeef74a2e8904914bc84de" target="_blank" rel="noreferrer">
                     <button className="py-2 px-6 
                     rounded-full border-2 border-my-text-light
                     text-my-text-light text-lg
@@ -301,7 +301,7 @@ function Carousel() {
                 </p>
 
                 <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/85833a94a7eeef74a2e8904914bc84de" target="_blank">
+                    <a href="https://coursera.org/share/85833a94a7eeef74a2e8904914bc84de" target="_blank" rel="noreferrer">
                     <button className="py-2 px-6 
                     rounded-full border-2 border-my-text-light
                     text-my-text-light text-lg
