@@ -28,8 +28,9 @@ function SideNavBar(){
     return (
         <>
         <Disclosure as="nav">
-         <Disclosure.Button className="absolute top-8 right-4 inline-flex items-center 
+         <Disclosure.Button className="fixed top-8 left-4 z-20 inline-flex items-center 
          peer justify-center rounded-md p-2 text-my-text-light dark:text-white
+         bg-card-light dark:bg-card-dark
          hover:bg-hover-bg-light dark:hover:bg-card-dark focus:bg-hover-bg-light dark:focus:bg-hover-bg-dark
          focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-white group">
             <GiHamburgerMenu className=' block md:hidden h-6 w-6 ' aria-hidden="true" />
@@ -51,22 +52,25 @@ function SideNavBar(){
                     text-my-text-light dark:text-my-text-dark
                      border-b border-gray-300 pb-4 w-full'>Leonardo-daVinci</h1>
 
-                    <div className='my-4 pb-4'>
+                    <div className='my-4 pb-4 font-productsans
+                    text-gray-600 dark:text-gray-200'>
                         <a href='#home'>
                         <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
                          hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark'>
-                        <AiFillHome className='mx-2 text-2xl text-gray-800 dark:text-white' />
-                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Home</h3>
+                          dark:hover:bg-hover-bg-dark 
+                         hover:text-gray-800 dark:hover:text-white'>
+                        <AiFillHome className='mx-2 text-2xl ' />
+                        <h3 className='lg:text-base text-lg'>Home</h3>
                         </div>
                         </a>
 
                         <a href='#my-skills'>
                         <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
                          hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark'>
-                        <FaBrain className='mx-2 text-2xl text-gray-800 dark:text-white' />
-                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Skills</h3>
+                          dark:hover:bg-hover-bg-dark 
+                         hover:text-gray-800 dark:hover:text-white'>
+                        <FaBrain className='mx-2 text-2xl ' />
+                        <h3 className='lg:text-base text-lg'>Skills</h3>
                         </div>
                         </a>
 
@@ -88,45 +92,50 @@ function SideNavBar(){
                         <a href='#my-projects'>
                         <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
                          hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark'>
-                        <GiOpenFolder className='mx-2 text-2xl text-gray-800 dark:text-white' />
-                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Portfolio</h3>
+                          dark:hover:bg-hover-bg-dark 
+                         hover:text-gray-800 dark:hover:text-white'>
+                        <GiOpenFolder className='mx-2 text-2xl ' />
+                        <h3 className='lg:text-base text-lg'>Portfolio</h3>
                         </div>
                         </a>
 
                         <a href="#my-academics">
                         <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
                          hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark'>
-                        <HiAcademicCap className='mx-2 text-2xl text-gray-800 dark:text-white' />
-                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Study</h3>
+                          dark:hover:bg-hover-bg-dark 
+                         hover:text-gray-800 dark:hover:text-white'>
+                        <HiAcademicCap className='mx-2 text-2xl ' />
+                        <h3 className='lg:text-base text-lg'>Study</h3>
                         </div>
                         </a>
 
                         <a href="#my-merits">
                         <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
                          hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark'>
-                        <FaCertificate className='mx-2 text-2xl text-gray-800 dark:text-white' />
-                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Merits</h3>
+                          dark:hover:bg-hover-bg-dark 
+                         hover:text-gray-800 dark:hover:text-white'>
+                        <FaCertificate className='mx-2 text-2xl ' />
+                        <h3 className='lg:text-base text-lg'>Merits</h3>
                         </div>
                         </a>
 
                         <a href="#my-hobbies">
                         <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
                          hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark'>
-                        <GiJigsawPiece className='mx-2 text-2xl text-gray-800 dark:text-white' />
-                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Extras</h3>
+                          dark:hover:bg-hover-bg-dark 
+                         hover:text-gray-800 dark:hover:text-white'>
+                        <GiJigsawPiece className='mx-2 text-2xl ' />
+                        <h3 className='lg:text-base text-lg'>Extras</h3>
                         </div>
                         </a>
 
                         <a href='https://keoliya.hashnode.dev/' target="_blank">
                         <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
                          hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark'>
-                        <MdOutlineNotes className='mx-2 text-2xl text-gray-800 dark:text-white' />
-                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Blog</h3>
+                          dark:hover:bg-hover-bg-dark 
+                         hover:text-gray-800 dark:hover:text-white'>
+                        <MdOutlineNotes className='mx-2 text-2xl ' />
+                        <h3 className='lg:text-base text-lg'>Blog</h3>
                         </div>
                         </a>
                     </div>

@@ -5,7 +5,7 @@ import {BsArrowRight} from "react-icons/bs"
 // import pdf from "../public/Akshit_Resume.pdf"
 
 import Image from 'next/image'
-import avatar from '../public/dev-ed-wave.png'
+import avatar2 from "../public/avatar2.png"
 
 import lang from '../public/lang.png'
 import machine from '../public/machine.png'
@@ -50,25 +50,36 @@ export default function Home() {
 
         {/* HOMEPAGE SECTION */}
 
-        <section className='min-h-screen md:min-h-fit'>
+        <nav className='fixed z-10 top-10 right-4 lg:right-10 flex justify-between dark:text-white'>
+          {/* <h1 className=' text-lg font-productsans'>Leonardo-daVinci</h1> */}
+          <ul className='flex items-center'>
+              <li><BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className=' cursor-pointer text-2xl
+              '/></li>
+              {/* <li><a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-productsans px-4 py-2 rounded-md ml-8' 
+              href='/portfolio/Akshit_Resume.pdf' target="_blank" rel="noreferrer">
+                Resume</a></li> */}
+          </ul>
+        </nav>
+
+        <section className='pt-20 min-h-screen md:min-h-fit'>
         
         {/* Navigation Section */}
         
-        <nav className=' py-10 mb-12 flex justify-between dark:text-white'>
-          {/* <h1 className=' text-lg font-productsans'>Leonardo-daVinci</h1> */}
+        {/* <nav className='absolute z-10 top-10 left-10 py-10 mb-12 flex justify-between dark:text-white'>
+          <h1 className=' text-lg font-productsans'>Leonardo-daVinci</h1>
           <ul className='flex items-center'>
               <li><BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className=' cursor-pointer text-2xl'/></li>
               <li><a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-productsans px-4 py-2 rounded-md ml-8' 
               href='/portfolio/Akshit_Resume.pdf' target="_blank" rel="noreferrer">
                 Resume</a></li>
           </ul>
-        </nav>
+        </nav> */}
 
           {/* Introduction */}
 
           <div className=' flex justify-center items-center mx-auto md:mb-12 md:pb-10'>
-          <div className='hidden lg:block relative bg-gradient-to-b from-my-text-light to-my-text-dark rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96'>
-          <Image src={avatar} alt='Avatar' fill="true" objectFit='cover' loading='eager' />
+          <div className='hidden lg:block relative bg-gradient-to-b from-my-text-light to-my-text-dark rounded-full w-80 h-80 lg:mt-10 overflow-hidden md:h-96 md:w-96'>
+          <Image src={avatar2} alt='Avatar' fill="true" objectFit='cover' loading='eager' priority='true' />
           </div>
           
           <div>
@@ -81,6 +92,16 @@ export default function Home() {
             <br></br>
             Excited to apply my knowledge to real-world problems and help organizations improve their operations and decision-making through machine learning!
               </p>
+
+              <div className='pt-5'>
+              <a className=' bg-my-text-light dark:bg-my-text-dark text-white dark:text-gray-800
+              text-2xl
+              font-productsans px-8 py-4 rounded-full' 
+              href='/portfolio/Akshit_Resume.pdf' target="_blank" rel="noreferrer">
+                Curriculum Vitae
+              </a>
+              </div>
+
           </div>
 
           {/* Contacts */}
@@ -97,8 +118,8 @@ export default function Home() {
 
           {/* Image */}
 
-          <div className='lg:hidden relative mx-auto bg-gradient-to-b from-my-text-light to-my-text-dark rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-          <Image src={avatar} alt='Avatar' fill="true" objectFit='cover' loading='eager' />
+          <div className='lg:hidden relative mx-auto bg-gradient-to-b from-my-text-light to-my-text-dark rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96'>
+          <Image src={avatar2} alt='Avatar' fill="true" objectFit='cover' loading="eager" priority='true' />
           </div>
 
         </section>
@@ -271,6 +292,49 @@ export default function Home() {
               
               </div>
             </div>
+
+            <div className='basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
+             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+              <Image src={fashion} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+              <div className=' px-4 py-4'>
+
+                <Chips category="Machine Learning" />
+                <Chips category="Python" />
+
+                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">H and M Fashion Recommendation System</h3>
+              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
+              
+              </div>
+            </div>
+
+            <div className='basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
+             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+              <Image src={fashion} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+              <div className=' px-4 py-4'>
+
+                <Chips category="Machine Learning" />
+                <Chips category="Python" />
+
+                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">H and M Fashion Recommendation System</h3>
+              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
+              
+              </div>
+            </div>
+
+            <div className='basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
+             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+              <Image src={fashion} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+              <div className=' px-4 py-4'>
+
+                <Chips category="Machine Learning" />
+                <Chips category="Python" />
+
+                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">H and M Fashion Recommendation System</h3>
+              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
+              
+              </div>
+            </div>
+
           </div>
 
           <a href='https://github.com/Leonardo-daVinci' target="_blank">
