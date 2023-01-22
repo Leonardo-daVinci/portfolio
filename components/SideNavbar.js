@@ -1,5 +1,8 @@
 import { Disclosure } from '@headlessui/react'
 import React from 'react'
+import Image from 'next/image'
+import Leo from "../public/Leo.png"
+import LeoWhite from "../public/Leo-White.png"
 import { 
     MdOutlineTimeline,
     MdOutlineNotes
@@ -26,33 +29,53 @@ function SideNavBar(){
         <>
         <Disclosure as="nav">
          <Disclosure.Button className="absolute top-8 right-4 inline-flex items-center 
-         peer justify-center rounded-md p-2 text-gray-900 
-         hover:text-white hover:bg-gray-900
-         focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white group">
+         peer justify-center rounded-md p-2 text-my-text-light dark:text-white
+         hover:bg-hover-bg-light dark:hover:bg-card-dark focus:bg-hover-bg-light dark:focus:bg-hover-bg-dark
+         focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-white group">
             <GiHamburgerMenu className=' block md:hidden h-6 w-6 ' aria-hidden="true" />
          </Disclosure.Button>
 
             <div className=' p-6 w-1/2 h-screen bg-card-light z-20 fixed top-0 -left-96 
             lg:w-20 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200
             dark:bg-card-dark'>
-                <div className='flex flex-col justify-start items-center'>
+                <div className='flex flex-col justify-start items-center gap-5'>
                     {/* Heading */}
-                    <h1 className='font-productsans text-base text-center cursor-pointer text-teal-600 border-b border-gray-300 pb-4 w-full'>Akshit</h1>
+                    <div className='flex justify-center dark:hidden'>
+                        <Image src={Leo} width={100} height={100}/>
+                    </div>
+                    <div className='hidden dark:flex dark:justify-center '>
+                        <Image src={LeoWhite} width={100} height={100}/>
+                    </div>
+                    
+                    <h1 className='lg:hidden font-productsans text-base text-center cursor-pointer
+                    text-my-text-light dark:text-my-text-dark
+                     border-b border-gray-300 pb-4 w-full'>Leonardo-daVinci</h1>
 
                     <div className='my-4 pb-4'>
                         <a href='#home'>
-                        <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
-                        <AiFillHome className=' text-2xl text-gray-800 w-full dark:text-white' />
-                        <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Home</h3>
+                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
+                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
+                          dark:hover:bg-hover-bg-dark'>
+                        <AiFillHome className='mx-2 text-2xl text-gray-800 dark:text-white' />
+                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Home</h3>
                         </div>
                         </a>
 
                         <a href='#my-skills'>
+                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
+                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
+                          dark:hover:bg-hover-bg-dark'>
+                        <FaBrain className='mx-2 text-2xl text-gray-800 dark:text-white' />
+                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Skills</h3>
+                        </div>
+                        </a>
+
+                        {/* <a href='#my-skills'>
                         <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
                         <FaBrain className=' text-2xl text-gray-800  w-full dark:text-white' />
                         <h3 className='text-base font-productsans text-gray-800  dark:text-white'>Skills</h3>
                         </div>
-                        </a>
+                        </a> */}
                         
 
                         {/* <a href='#my-skills'>
@@ -63,37 +86,47 @@ function SideNavBar(){
                         </a> */}
 
                         <a href='#my-projects'>
-                        <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
-                        <GiOpenFolder className=' text-2xl text-gray-800 dark:text-white w-full' />
-                        <h3 className='text-base font-productsans text-gray-800 dark:text-white '>Portfolio</h3>
+                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
+                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
+                          dark:hover:bg-hover-bg-dark'>
+                        <GiOpenFolder className='mx-2 text-2xl text-gray-800 dark:text-white' />
+                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Portfolio</h3>
                         </div>
                         </a>
 
                         <a href="#my-academics">
-                        <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
-                        <HiAcademicCap className=' text-2xl text-gray-800 dark:text-white w-full' />
-                        <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Study</h3>
+                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
+                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
+                          dark:hover:bg-hover-bg-dark'>
+                        <HiAcademicCap className='mx-2 text-2xl text-gray-800 dark:text-white' />
+                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Study</h3>
                         </div>
                         </a>
 
                         <a href="#my-merits">
-                        <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
-                        <FaCertificate className=' text-2xl text-gray-800 dark:text-white w-full' />
-                        <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Merits</h3>
+                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
+                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
+                          dark:hover:bg-hover-bg-dark'>
+                        <FaCertificate className='mx-2 text-2xl text-gray-800 dark:text-white' />
+                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Merits</h3>
                         </div>
                         </a>
 
                         <a href="#my-hobbies">
-                        <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
-                        <GiJigsawPiece className=' text-2xl text-gray-800 dark:text-white w-full' />
-                        <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Extras</h3>
+                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
+                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
+                          dark:hover:bg-hover-bg-dark'>
+                        <GiJigsawPiece className='mx-2 text-2xl text-gray-800 dark:text-white' />
+                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Extras</h3>
                         </div>
                         </a>
 
                         <a href='https://keoliya.hashnode.dev/' target="_blank">
-                        <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
-                        <MdOutlineNotes className=' text-2xl text-gray-800 w-full dark:text-white' />
-                        <h3 className='text-base font-productsans text-gray-800 dark:text-white'>Blog</h3>
+                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
+                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
+                          dark:hover:bg-hover-bg-dark'>
+                        <MdOutlineNotes className='mx-2 text-2xl text-gray-800 dark:text-white' />
+                        <h3 className='lg:text-base font-productsans text-lg text-gray-800 dark:text-white'>Blog</h3>
                         </div>
                         </a>
                     </div>

@@ -76,6 +76,14 @@ a {
   margin: 0 10px;
 }
 
+.slick-slide {
+  height: inherit !important;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
 .slick-list {
   margin: 0 -10px;
 }
