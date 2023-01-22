@@ -1,8 +1,8 @@
 import { Disclosure } from '@headlessui/react'
 import React from 'react'
 import Image from 'next/image'
-import Leo from "../public/Leo.png"
-import LeoWhite from "../public/Leo-White.png"
+// import Leo from "../public/Leo.png"
+// import LeoWhite from "../public/Leo-White.png"
 import { 
     MdOutlineTimeline,
     MdOutlineNotes
@@ -42,10 +42,13 @@ function SideNavBar(){
                 <div className='flex flex-col justify-start items-center gap-5'>
                     {/* Heading */}
                     <div className='flex justify-center dark:hidden'>
-                        <Image src={Leo} width={100} height={100}/>
+                    {/* <Image src={Leo} width={100} height={100}/> */}
+                    <Image src={`${process.env.NEXT_PUBLIC_FAVICON}/Leo.png`} width={100} height={100}/>
                     </div>
                     <div className='hidden dark:flex dark:justify-center '>
-                        <Image src={LeoWhite} width={100} height={100}/>
+                        {/* <Image src={Leo} width={100} height={100}/> */}
+                        
+                        <Image src={`${process.env.NEXT_PUBLIC_FAVICON}/Leo-white.png`} width={100} height={100}/>
                     </div>
                     
                     <h1 className='lg:hidden font-productsans text-base text-center cursor-pointer
