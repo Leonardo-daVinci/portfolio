@@ -36,7 +36,7 @@ function SideNavBar(){
             <GiHamburgerMenu className=' block md:hidden h-6 w-6 ' aria-hidden="true" />
          </Disclosure.Button>
 
-            <div className=' p-6 w-1/2 h-screen bg-card-light z-20 fixed top-0 -left-96 
+            <div className=' p-6 w-1/2 h-screen bg-card-light z-20 fixed top-0 -left-96 rounded-r-2xl lg:rounded-r-none
             lg:w-20 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200
             dark:bg-card-dark'>
                 <div className='flex flex-col justify-start items-center gap-5'>

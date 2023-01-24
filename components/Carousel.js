@@ -24,6 +24,7 @@ function Carousel() {
       slidesToShow: 3,
       slidesToScroll: 3,
       initialSlide: 0,
+      adaptiveHeight: true,
       responsive: [
         {
           breakpoint: 1024,
@@ -40,7 +41,6 @@ function Carousel() {
             slidesToShow: 2,
             slidesToScroll: 2,
             initialSlide: 2,
-            adaptiveHeight: false
           }
         },
         {
@@ -48,7 +48,6 @@ function Carousel() {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            adaptiveHeight: true
           }
         }
       ]

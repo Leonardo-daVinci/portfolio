@@ -11,10 +11,6 @@ import lang from '../public/lang.png'
 import machine from '../public/machine.png'
 import tools from '../public/tools.png'
 
-import amazon from "../public/amazon-clone.png"
-import fashion from "../public/hm-fashion.png"
-import vigil from "../public/vigil-system.png"
-
 import gdc from "../public/gdc-logo.png"
 
 import reading from "../public/reading.png"
@@ -32,6 +28,8 @@ import Blocks from '../components/Blocks'
 import Course from '../components/Course'
 import Carousel from '../components/Carousel'
 import Bullet from '../components/Bullet'
+import ViewBtn from '../components/ViewBtn'
+import SectionPortfolio from '../components/sections/section-portfolio'
 
 export default function Home() {
 
@@ -61,32 +59,26 @@ export default function Home() {
           </ul>
         </nav>
 
-        <section className='pt-20 min-h-screen md:min-h-fit'>
+        <section className='lg:pt-20 pt-16 min-h-screen md:min-h-fit'>
         
         {/* Navigation Section */}
         
-        {/* <nav className='absolute z-10 top-10 left-10 py-10 mb-12 flex justify-between dark:text-white'>
-          <h1 className=' text-lg font-productsans'>Leonardo-daVinci</h1>
-          <ul className='flex items-center'>
-              <li><BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className=' cursor-pointer text-2xl'/></li>
-              <li><a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-productsans px-4 py-2 rounded-md ml-8' 
-              href='/portfolio/Akshit_Resume.pdf' target="_blank" rel="noreferrer">
-                Resume</a></li>
-          </ul>
-        </nav> */}
-
           {/* Introduction */}
+
+          <div className='lg:hidden relative bg-gradient-to-b from-my-text-light to-my-text-dark rounded-full w-80 h-80 overflow-hidden md:h-96 md:w-96'>
+          <Image src={avatar2} alt='Avatar' fill="true" objectFit='cover' loading='eager' priority='true' />
+          </div>
 
           <div className=' flex justify-center items-center mx-auto md:mb-12 md:pb-10'>
           <div className='hidden lg:block relative bg-gradient-to-b from-my-text-light to-my-text-dark rounded-full w-80 h-80 lg:mt-10 overflow-hidden md:h-96 md:w-96'>
           <Image src={avatar2} alt='Avatar' fill="true" objectFit='cover' loading='eager' priority='true' />
           </div>
           
-          <div>
-          <div className=' text-center p-10 font-productsans'>
-            <h2 className=' text-6xl py-2 text-my-text-light md:text-6xl dark:text-my-text-dark'>Akshit Abhay Keoliya</h2>
-            <h3 className=' text-2xl py-2 md:text-3xl dark:text-white'>Machine Learning Enthusiast and Developer</h3>
-            <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl max-w-xl mx-auto dark:text-gray-200'>
+          <div className='px-20'>
+          <div className=' text-center p-5 lg:p-10 font-productsans'>
+            <h2 className=' text-4xl lg:text-6xl py-2 text-my-text-light md:text-6xl dark:text-my-text-dark'>Akshit Abhay Keoliya</h2>
+            <h3 className=' text-xl pt-2 md:text-3xl dark:text-white'>Machine Learning Enthusiast and Developer</h3>
+            <p className=' text-md py-5 lg:leading-8 text-gray-800v md:text-xl max-w-xl mx-auto dark:text-gray-200'>
             Completing my master<span>&apos;</span>s in Computer Science at 
             <span className='text-[#0b57d0] dark:text-[#a8c7fa]'><a href='https://www.usc.edu/'> USC</a></span>.
             <br></br>
@@ -106,7 +98,7 @@ export default function Home() {
 
           {/* Contacts */}
 
-          <div className=' text-5xl flex justify-center gap-10 py-3 text-gray-600 dark:text-gray-400'>
+          <div className=' text-5xl flex justify-center gap-10 py-8 text-gray-600 dark:text-gray-400'>
             <a href='https://www.linkedin.com/in/akshit-keoliya'><AiFillLinkedin /></a>  
             <a href='https://github.com/Leonardo-daVinci'><AiFillGithub /></a>
             <a href='https://twitter.com/AkshitAbhay'><AiFillTwitterCircle /></a>
@@ -118,9 +110,9 @@ export default function Home() {
 
           {/* Image */}
 
-          <div className='lg:hidden relative mx-auto bg-gradient-to-b from-my-text-light to-my-text-dark rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96'>
+          {/* <div className='lg:hidden relative mx-auto bg-gradient-to-b from-my-text-light to-my-text-dark rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96'>
           <Image src={avatar2} alt='Avatar' fill="true" objectFit='cover' loading="eager" priority='true' />
-          </div>
+          </div> */}
 
         </section>
 
@@ -128,7 +120,7 @@ export default function Home() {
 
         <section>
           <div id="my-skills" className=' font-productsans pt-10'>
-              <h3 className=' text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>My skills</h3>
+              <h3 className='text-center lg:text-start text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>My skills</h3>
               <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
               I have a strong background in mathematics and computer science and 
               have been working on developing my skills in ML techniques and algorithms.
@@ -239,7 +231,7 @@ export default function Home() {
         <section>
           
           <div id="my-projects" className=' font-productsans'>
-          <h3 className=' text-5xl pt-10 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark '>Portfolio</h3>
+          <h3 className='text-center lg:text-start text-5xl pt-10 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark '>Portfolio</h3>
           <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'>
           As a Machine Learning Engineer, my projects include a wide range of applications of ML techniques - computer vision, natural language processing, prediction, and reinforcement learning.
           Along with these, I enjoy building mobile applications and webapps using popular frameworks like React.  
@@ -248,94 +240,7 @@ export default function Home() {
           </p>
           </div>
 
-          <div className=' font-productsans flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            
-            {/* Multi-camera Surveillance */}
-            <div className=' basis-1/4 flex-1 group bg-card-light rounded-lg hover:bg-hover-bg-light
-            dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-              <Image src={vigil} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
-              <div className=' px-4 py-4'>
-
-              <Chips category="Machine Learning" />
-              <Chips category="Python" />
-
-              <h3 className="text-xl pt-4 text-gray-800 dark:text-white">Multi-Camera Surveillance System</h3>
-              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
-              </div>
-            </div>
-
-            <div className=' basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
-             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-              <Image src={amazon} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
-              <div className=' px-4 py-4'>
-
-                <Chips category="React" />
-                <Chips category="Firebase" />
-                <Chips category="JavaScript" />
-
-                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">Amazon React Clone</h3>
-              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
-              
-              </div>
-            </div>
-
-            <div className='basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
-             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-              <Image src={fashion} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
-              <div className=' px-4 py-4'>
-
-                <Chips category="Machine Learning" />
-                <Chips category="Python" />
-
-                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">H and M Fashion Recommendation System</h3>
-              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
-              
-              </div>
-            </div>
-
-            <div className='basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
-             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-              <Image src={fashion} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
-              <div className=' px-4 py-4'>
-
-                <Chips category="Machine Learning" />
-                <Chips category="Python" />
-
-                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">H and M Fashion Recommendation System</h3>
-              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
-              
-              </div>
-            </div>
-
-            <div className='basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
-             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-              <Image src={fashion} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
-              <div className=' px-4 py-4'>
-
-                <Chips category="Machine Learning" />
-                <Chips category="Python" />
-
-                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">H and M Fashion Recommendation System</h3>
-              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
-              
-              </div>
-            </div>
-
-            <div className='basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
-             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-              <Image src={fashion} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
-              <div className=' px-4 py-4'>
-
-                <Chips category="Machine Learning" />
-                <Chips category="Python" />
-
-                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">H and M Fashion Recommendation System</h3>
-              <p className='text-md pb-4 dark:text-white'>Some description for the project</p>
-              
-              </div>
-            </div>
-
-          </div>
+          <SectionPortfolio />
 
           <a href='https://github.com/Leonardo-daVinci' target="_blank" rel="noreferrer">
           <div className=' flex justify-end'>
@@ -354,7 +259,7 @@ export default function Home() {
         {/* EDUCATION */}
         <section>
         <div id="my-academics" className=' font-productsans pt-10'>
-              <h3 className=' text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Academic background</h3>
+              <h3 className='text-center lg:text-start text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Academic background</h3>
               <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
                 Summary of my Masters Degree <span>&#40;</span>ongoing<span>&#41;</span> and Bachelors Degree.
               </p>
@@ -543,7 +448,7 @@ export default function Home() {
             {/* MERITS */}
           <section>
           <div id="my-merits" className=' font-productsans pt-10'>
-              <h3 className=' text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Certifications and Achievements</h3>
+              <h3 className='text-center lg:text-start text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Certifications and Achievements</h3>
               <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
                 This section includes certifications in machine learning, deep learning and data science, recognition in hackathons, competitions and DevFests, and awards and publications.
                  <br></br>  It showcases my dedication to continuously learn and improve my skills.
@@ -567,7 +472,7 @@ export default function Home() {
         {/* EXTRAS */}
         <section>
         <div id="my-hobbies" className=' font-productsans pt-10'>
-              <h3 className=' text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Co-curricular Activities</h3>
+              <h3 className='text-center lg:text-start text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Co-curricular Activities</h3>
               <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
                 This section includes my involvement in student clubs, hobbies and other personal info. 
               </p>
@@ -631,7 +536,7 @@ export default function Home() {
             </div>
 
             <div className=' font-productsans pt-10'>
-              <h3 className=' text-5xl pt-10 text-my-text-light md:text-4xl dark:text-my-text-dark'>Hobbies</h3>
+              <h3 className='text-center lg:text-start text-5xl pt-10 text-my-text-light md:text-4xl dark:text-my-text-dark'>Hobbies</h3>
               <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
               My hobbies section includes a variety of activities that I enjoy and that demonstrate my diverse interests. It provides a glimpse into my personality and demonstrates my ability to balance work and leisure.
               </p>
