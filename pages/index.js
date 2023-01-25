@@ -65,8 +65,10 @@ export default function Home() {
         
           {/* Introduction */}
 
-          <div className='lg:hidden relative bg-gradient-to-b from-my-text-light to-my-text-dark rounded-full w-80 h-80 overflow-hidden md:h-96 md:w-96'>
+          <div className='flex justify-center mx-auto'>
+          <div className='lg:hidden relative rounded-full w-80 h-80 overflow-hidden md:h-96 md:w-96'>
           <Image src={avatar2} alt='Avatar' fill="true" objectFit='cover' loading='eager' priority='true' />
+          </div>
           </div>
 
           <div className=' flex justify-center items-center mx-auto md:mb-12 md:pb-10'>

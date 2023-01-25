@@ -4,7 +4,7 @@ function ViewBtn({link}){
 
     return(
         <>
-        <div className="w-full flex justify-end p-4">
+        <div className="mt-auto w-full flex justify-end p-4">
             <a href={link} target="_blank" rel="noreferrer">
                 <button className="py-2 px-6 
                 rounded-full border-2 border-my-text-light

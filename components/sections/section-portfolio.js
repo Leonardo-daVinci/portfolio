@@ -10,106 +10,82 @@ import tflite from "../../public/tflite.png"
 
 import Chips from "../Chips";
 import ViewBtn from "../ViewBtn";
+import Project from "../Project";
 
 function SectionPortfolio(){
     return(
         <>
-        <div className=' font-productsans flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            
-            {/* Multi-camera Surveillance */}
-            <div className=' basis-1/4 flex-1 group bg-card-light rounded-lg hover:bg-hover-bg-light
-            dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-              <Image src={vigil} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
-              <div className=' px-4 pt-4'>
+        <div className="my-10 container grid lg:grid-cols-3 gap-10 mx-auto">
 
-              <Chips category="Machine Learning" />
-              <Chips category="Python" />
+          <Project 
+              img = {vigil}
+              tags = {<div>
+                <Chips category="Machine Learning" />
+                <Chips category="Python" />
+              </div>}
+              name = "Multi-Camera Surveillance System"
+              des = "Maps individuals in 3D space and predicts their movement using LSTM model."
+              link = ""
+          />
 
-              <h3 className="text-xl pt-4 text-gray-800 dark:text-white">Multi-Camera Surveillance System</h3>
-              <p className='text-md pt-2 dark:text-white'>Maps individuals in 3D space and predicts their movement using LSTM model.</p>
-              </div>
-              {/* <ViewBtn link="" /> */}
-            </div>
-
-            <div className=' basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
-             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-              <Image src={amazon} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
-              <div className=' px-4 pt-4'>
-
-                <Chips category="React" />
+          <Project 
+            img = {amazon}
+            tags = {<div>
+              <Chips category="React" />
                 <Chips category="Firebase" />
                 <Chips category="JavaScript" />
+            </div>}
+            name = "Amazon React Clone"
+            des = "A clone of Amazon website with user accounts using React context API and Firebase firestore Along with payment module using Stripe.js and Cloud Functions."
+            link = "https://github.com/Leonardo-daVinci/amazon-clone"
+          />
 
-                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">Amazon React Clone</h3>
-              <p className='text-md pt-2 dark:text-white'>A clone of Amazon website with user accounts using React context API and Firebase firestore
-              Along with payment module using Stripe.js and Cloud Functions.</p>
-              </div>
-              <ViewBtn link="https://github.com/Leonardo-daVinci/amazon-clone" />
-            </div>
+          <Project 
+            img = {fashion}
+            tags = {<div>
+              <Chips category="Machine Learning" />
+              <Chips category="Python" />
+            </div>}
+            name = "H and M Fashion Recommendation System"
+            des = "Ensemble based recommender for Kaggle competition. Employed LSTM, K-Means, PCA, and other algorithms in a two staged ensemble model."
+            link="/portfolio/HM-Report.pdf" 
+            />
 
-            <div className='basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
-             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-              <Image src={fashion} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
-              <div className=' px-4 pt-4'>
+          <Project 
+            img = {littleGo}
+            tags = {<div>
+              <Chips category="Machine Learning" />
+              <Chips category="Python" />
+            </div>}
+            name = "Little Go Agent"
+            des = "A reinforcement learning agent that plays 5x5 Go game using Q-Learning Algorithm."
+            link="https://github.com/Leonardo-daVinci/Little-Go-Agent"
+            />
 
-                <Chips category="Machine Learning" />
-                <Chips category="Python" />
+          <Project 
+            img = {stocksApp}
+            tags = {<div>
+              <Chips category="Android" />
+              <Chips category="Node.js" />
+              <Chips category="GCP" />
+            </div>}
+            name = "StocksApp"
+            des = "Mobile application that simulates buying and selling stocks along with portfolio for each user. Built using Android frontend and Node,js backend."
+            link = "https://github.com/Leonardo-daVinci/StocksApp"
+            />
 
-                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">H and M Fashion Recommendation System</h3>
-              <p className='text-md pt-2 dark:text-white'>Ensemble based recommender for Kaggle competition. Employed LSTM, K-Means, PCA, and other algorithms in a two staged ensemble model.
-              </p>
+          <Project 
+            img = {tflite}
+            tags = {<div>
+              <Chips category="TensorFlow" />
+              <Chips category="Android" />
+            </div>}
+            name = "EMNIST Character Classifier"
+            des = "Android application that classifies user input doodles into EMNIST characters using TensorFlow Lite."
+            link = "https://github.com/Leonardo-daVinci/EMNIST-Character-Recognizer"
+            />
 
-              <ViewBtn link="/portfolio/HM-Report.pdf" />
-              
-              </div>
-            </div>
-
-            <div className='basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
-             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-              <Image src={littleGo} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
-              <div className=' px-4 pt-4'>
-
-                <Chips category="Machine Learning" />
-                <Chips category="Python" />
-
-                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">Little Go Agent</h3>
-              <p className='text-md pt-2 dark:text-white'>A reinforcement learning agent that plays 5x5 Go game using Q-Learning Algorithm.</p>
-              </div>
-              <ViewBtn link="https://github.com/Leonardo-daVinci/Reinforcement_Learning" />
-              
-            </div>
-
-            <div className='basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
-             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-              <Image src={stocksApp} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
-              <div className=' px-4 py-4'>
-
-                <Chips category="Android" />
-                <Chips category="Node.js" />
-                <Chips category="GCP" />
-
-                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">StocksApp</h3>
-              <p className='text-md pt-2 dark:text-white'>Mobile application that simulates buying and selling stocks along with portfolio for each user.
-              Built using Android frontend and Node,js backend.</p>
-              </div>
-              <ViewBtn link="https://github.com/Leonardo-daVinci/StocksApp" />
-            </div>
-
-            <div className='basis-1/4 flex-1 bg-card-light rounded-lg hover:bg-hover-bg-light group
-             dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-              <Image src={tflite} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
-              <div className=' px-4 py-4'>
-
-                <Chips category="TensorFlow" />
-                <Chips category="Android" />
-
-                <h3 className="text-xl pt-4 text-gray-800 dark:text-white">EMNIST Character Classifier</h3>
-              <p className='text-md pt-2 dark:text-white'>Android application that classifies user input doodles into EMNIST characters using TensorFlow Lite.</p>
-              </div>
-              <ViewBtn link="https://github.com/Leonardo-daVinci/EMNIST-Android-TF" />
-            </div>
-
-          </div>
+        </div>
         </>
     )
 }
