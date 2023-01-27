@@ -12,8 +12,7 @@ import gcloud from "../public/gcloud.png"
 import certificate from "../public/certificate.png"
 import achieve from "../public/achievement.png"
 
-import Chips from "./Chips";
-import Certifications from "./Certifications";
+import Certificate from "./Certificate";
 
 function Carousel() {
 
@@ -32,7 +31,6 @@ function Carousel() {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            adaptiveHeight: false
           }
         },
         {
@@ -56,7 +54,7 @@ function Carousel() {
     return(
         <>
             {/* Certifications SECTION */}
-            <div className=" font-productsans">
+            <div className=" font-productsans mt-10">
 
             {/* <div className='  text-center rounded-xl my-10 group p-5 flex-1
            bg-card-light
@@ -75,7 +73,7 @@ function Carousel() {
 
             <Slider {...settings}>
 
-            <div className='  text-center rounded-xl my-10 group p-5 flex
+            <div className='  text-center rounded-xl group p-5 flex
            bg-hover-bg-light
             dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
             <h3 className=' text-2xl pt-5 pb-2'>Certifications</h3>
@@ -93,226 +91,76 @@ function Carousel() {
                 </div>
             </div>
 
-            {/* Coursera Certificate  1*/}
+            <Certificate 
+                img={coursera}
+                name="Introduction to TensorFlow for AI, ML, and Deep Learning"
+                source="DeepLearning.AI"
+                link="https://coursera.org/share/1f8ea593b1c2ad611800a10e65337336" 
+            />
 
-          <div className=' text-center rounded-xl my-10 flex group px-5
-           bg-card-light hover:bg-hover-bg-light
-            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-                <div className='flex justify-center'>
-            <Image src={coursera} width={"50%"} height={"50%"} layout="responsive"/>
-            </div>
-                <h3 className=' text-2xl pt-4 pb-2'>Introduction to TensorFlow for AI, ML, and Deep Learning</h3>
-                <p className='py-2 text-xl text-my-text-light dark:text-white'>
-                    DeepLearning.AI
-                </p>
-
-                <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/1f8ea593b1c2ad611800a10e65337336" target="_blank" rel="noreferrer">
-                    <button className="py-2 px-6 
-                    rounded-full border-2 border-my-text-light
-                    text-my-text-light text-lg
-                    hover:text-white hover:bg-my-text-light
-                    dark:border-hover-bg-light dark:hover:bg-hover-bg-light
-                    dark:text-hover-bg-light dark:hover:text-card-dark">
-                        View
-                    </button>
-                    </a>
-            </div>
-            </div>
-
-
-            {/* Coursera Certificate  1-1*/}
-
-          <div className=' text-center rounded-xl my-10 flex group px-5
-           bg-card-light hover:bg-hover-bg-light
-            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-                <div className='flex justify-center'>
-            <Image src={coursera} width={"50%"} height={"50%"} layout="responsive"/>
-            </div>
-                <h3 className=' text-2xl pt-4 pb-2'>Neural Networks and Deep Learning</h3>
-                <p className='py-2 text-xl text-my-text-light dark:text-white'>
-                DeepLearning.AI
-                </p>
-
-                <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/b5fea1b15974aa58b6e1233d10cb3dac" target="_blank" rel="noreferrer">
-                    <button className="py-2 px-6 
-                    rounded-full border-2 border-my-text-light
-                    text-my-text-light text-lg
-                    hover:text-white hover:bg-my-text-light
-                    dark:border-hover-bg-light dark:hover:bg-hover-bg-light
-                    dark:text-hover-bg-light dark:hover:text-card-dark">
-                        View
-                    </button>
-                    </a>
-            </div>
-            </div>
+            <Certificate 
+                img={coursera}
+                name="Neural Networks and Deep Learning"
+                source="DeepLearning.AI"
+                link="https://coursera.org/share/b5fea1b15974aa58b6e1233d10cb3dac" 
+            />
 
             {/* Qwiklabs Certificate 1*/}
 
-          <div className=' text-center rounded-xl my-10 flex group px-5
-           bg-card-light hover:bg-hover-bg-light
-            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-                <div className='flex justify-center'>
-            <Image src={gcloud} width={"50%"} height={"50%"} layout="responsive"/>
-            </div>
-                <h3 className=' text-2xl pt-4 pb-2'>Machine Learning Path</h3>
-                <p className='py-2 text-xl text-my-text-light dark:text-white'>
-                Google Cloud
-                </p>
-
-                <div className="w-full flex justify-end p-4">
-                    <a href="https://www.cloudskillsboost.google/public_profiles/244b103e-debd-4b14-a0f6-90ebc3705404" target="_blank" rel="noreferrer">
-                    <button className="py-2 px-6 
-                    rounded-full border-2 border-my-text-light
-                    text-my-text-light text-lg
-                    hover:text-white hover:bg-my-text-light
-                    dark:border-hover-bg-light dark:hover:bg-hover-bg-light
-                    dark:text-hover-bg-light dark:hover:text-card-dark">
-                        View
-                    </button>
-                    </a>
-            </div>
-            </div>
-
+            <Certificate 
+                img={gcloud}
+                name="Machine Learning Path"
+                source="Google Cloud"
+                link="https://www.cloudskillsboost.google/public_profiles/244b103e-debd-4b14-a0f6-90ebc3705404"
+            />
 
             {/* Coursera Certificate  2*/}
 
-          <div className=' text-center rounded-xl my-10 flex group px-5
-           bg-card-light hover:bg-hover-bg-light
-            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-                <div className='flex justify-center'>
-            <Image src={coursera} width={"50%"} height={"50%"} layout="responsive"/>
-            </div>
-                <h3 className=' text-2xl pt-4 pb-2'>Convolutional Neural Networks in TensorFlow</h3>
-                <p className='py-2 text-xl text-my-text-light dark:text-white'>
-                DeepLearning.AI
-                </p>
-
-                <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/5df47f9480c647ddde06ac7a1437f0cf" target="_blank" rel="noreferrer">
-                    <button className="py-2 px-6 
-                    rounded-full border-2 border-my-text-light
-                    text-my-text-light text-lg
-                    hover:text-white hover:bg-my-text-light
-                    dark:border-hover-bg-light dark:hover:bg-hover-bg-light
-                    dark:text-hover-bg-light dark:hover:text-card-dark">
-                        View
-                    </button>
-                    </a>
-            </div>
-            </div>
+            <Certificate 
+                img={coursera}
+                name="Convolutional Neural Networks in TensorFlow"
+                source="DeepLearning.AI"
+                link="https://coursera.org/share/5df47f9480c647ddde06ac7a1437f0cf" 
+            />
 
           
             {/* Coursera Certificate  3*/}
 
-          <div className=' text-center rounded-xl my-10 flex group px-5 
-           bg-card-light hover:bg-hover-bg-light
-            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-                <div className='flex justify-center'>
-            <Image src={coursera} width={"50%"} height={"50%"} layout="responsive"/>
-            </div>
-                <h3 className=' text-2xl pt-4 pb-2'>Natural Language Processing in TensorFlow</h3>
-                <p className='py-2 text-xl text-my-text-light dark:text-white'>
-                DeepLearning.AI
-                </p>
-
-                <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/d8438d9d4d830342f83649642936bdfd" target="_blank" rel="noreferrer">
-                    <button className="py-2 px-6 
-                    rounded-full border-2 border-my-text-light
-                    text-my-text-light text-lg
-                    hover:text-white hover:bg-my-text-light
-                    dark:border-hover-bg-light dark:hover:bg-hover-bg-light
-                    dark:text-hover-bg-light dark:hover:text-card-dark">
-                        View
-                    </button>
-                    </a>
-            </div>
-            </div>
+            <Certificate 
+                img={coursera}
+                name="Natural Language Processing in TensorFlow"
+                source="DeepLearning.AI"
+                link="https://coursera.org/share/d8438d9d4d830342f83649642936bdfd" 
+            />
 
 
             {/* Coursera Certificate  4*/}
 
-          <div className=' text-center rounded-xl my-10 flex group px-5 
-           bg-card-light hover:bg-hover-bg-light
-            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-                <div className='flex justify-center'>
-            <Image src={coursera} width={"50%"} height={"50%"} layout="responsive"/>
-            </div>
-                <h3 className=' text-2xl pt-4 pb-2'>Sequence, Time Series and Prediction</h3>
-                <p className='py-2 text-xl text-my-text-light dark:text-white'>
-                DeepLearning.AI
-                </p>
+            <Certificate 
+                img={coursera}
+                name="Sequence, Time Series and Prediction"
+                source="DeepLearning.AI"
+                link="https://coursera.org/share/85833a94a7eeef74a2e8904914bc84de" 
+            />
 
-                <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/85833a94a7eeef74a2e8904914bc84de" target="_blank" rel="noreferrer">
-                    <button className="py-2 px-6 
-                    rounded-full border-2 border-my-text-light
-                    text-my-text-light text-lg
-                    hover:text-white hover:bg-my-text-light
-                    dark:border-hover-bg-light dark:hover:bg-hover-bg-light
-                    dark:text-hover-bg-light dark:hover:text-card-dark">
-                        View
-                    </button>
-                    </a>
-            </div>
-            </div>
 
             {/* Udacity Certificate  1*/}
 
-          <div className=' text-center rounded-xl my-10 flex group px-5 
-           bg-card-light hover:bg-hover-bg-light
-            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-                <div className='flex justify-center'>
-            <Image src={udacity} width={"50%"} height={"50%"} layout="responsive"/>
-            </div>
-                <h3 className=' text-2xl pt-4 pb-2'>Intro to TensorFlow for Deep Learning</h3>
-                <p className='py-2 text-xl text-my-text-light dark:text-white'>
-                TensorFlow
-                </p>
-
-                <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/85833a94a7eeef74a2e8904914bc84de" target="_blank" rel="noreferrer">
-                    <button className="py-2 px-6 
-                    rounded-full border-2 border-my-text-light
-                    text-my-text-light text-lg
-                    hover:text-white hover:bg-my-text-light
-                    dark:border-hover-bg-light dark:hover:bg-hover-bg-light
-                    dark:text-hover-bg-light dark:hover:text-card-dark">
-                        View
-                    </button>
-                    </a>
-            </div>
-            </div>
+            <Certificate 
+                img={udacity}
+                name="Intro to TensorFlow for Deep Learning"
+                source="TensorFlow"
+                link="https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187"
+            />
 
             {/* Udacity Certificate  1*/}
 
-          <div className=' text-center rounded-xl my-10 flex group px-5 
-           bg-card-light hover:bg-hover-bg-light
-            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-                <div className='flex justify-center'>
-            <Image src={udacity} width={"50%"} height={"50%"} layout="responsive"/>
-            </div>
-                <h3 className=' text-2xl pt-4 pb-2'>Developing Android Apps with Kotlin</h3>
-                <p className='py-2 text-xl text-my-text-light dark:text-white'>
-                Google
-                </p>
-
-                <div className="w-full flex justify-end p-4">
-                    <a href="https://coursera.org/share/85833a94a7eeef74a2e8904914bc84de" target="_blank" rel="noreferrer">
-                    <button className="py-2 px-6 
-                    rounded-full border-2 border-my-text-light
-                    text-my-text-light text-lg
-                    hover:text-white hover:bg-my-text-light
-                    dark:border-hover-bg-light dark:hover:bg-hover-bg-light
-                    dark:text-hover-bg-light dark:hover:text-card-dark">
-                        View
-                    </button>
-                    </a>
-            </div>
-            </div>
-          
+            <Certificate 
+                img={udacity}
+                name="Developing Android Apps with Kotlin"
+                source="Google"
+                link="https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012"
+            />
           
             </Slider>
             </div>

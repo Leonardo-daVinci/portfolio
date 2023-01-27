@@ -15,7 +15,7 @@ import Project from "../Project";
 function SectionPortfolio(){
     return(
         <>
-        <div className="my-10 container grid lg:grid-cols-3 gap-10 mx-auto">
+        <div className="my-10 container grid lg:grid-cols-3 gap-5 mx-auto">
 
           <Project 
               img = {vigil}

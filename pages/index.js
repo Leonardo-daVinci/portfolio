@@ -131,7 +131,7 @@ export default function Home() {
           </div>
 
           {/* Cards */}
-          <div className='lg:flex gap-10'>
+          <div className='lg:flex gap-5 '>
           <div className=' font-productsans text-center p-5 rounded-xl my-10 flex-1 group
            bg-card-light hover:bg-hover-bg-light 
            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
@@ -170,13 +170,6 @@ export default function Home() {
 
             <div className='container mx-auto font-productsans'>
               <div className=' lg:grid-cols-3 p-5 space-y-2 lg:space-y-0 grid gap-2 grid-cols-2 '>
-
-                  {/* <div className=' text-center rounded-lg  bg-hover-bg-light group-hover:bg-card-light  dark:bg-slate-500 flex-1 w-full'>
-                    <div className='flex justify-center mb-2 mt-5 basis-1/3' >
-                      <img height="32" width="32" src="https://cdn.simpleicons.org/tensorflow/FF6F00" />
-                    </div>
-                    <p className='pb-2' >TensorFlow</p>
-                  </div> */}
 
                   <Blocks skill="TensorFlow" image="https://cdn.simpleicons.org/tensorflow/FF6F00"/>
                   <Blocks skill="PyTorch" image="https://cdn.simpleicons.org/pytorch/EE4C2C" />
@@ -459,15 +452,19 @@ export default function Home() {
 
           <Carousel />
 
+          <Link href="/details">
           <div className=' flex justify-end'>
           <div className='font-productsans text-center rounded-2xl mb-10 group p-5 lg:w-1/2
-          flex items-center
            bg-card-light hover:bg-hover-bg-light
+           flex items-center
             dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-            <h3 className='text-center w-full text-2xl'>View all certifications, achievements and participations here</h3>
+             
+            <h3 className='text-center w-full text-2xl'>
+              View all certifications and achievements here</h3>
             <BsArrowRight className=' text-2xl ml-5'/>
             </div>
           </div>
+          </Link>
         </section>
 
         

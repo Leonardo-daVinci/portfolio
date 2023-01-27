@@ -76,12 +76,16 @@ a {
   margin: 0 10px;
 }
 
+.slick-slide.slick-active > div {
+  height: max-content;
+}
+
 .slick-slide {
-  height: inherit !important;
+  height: inherit
 }
 
 .slick-track {
-  display: flex !important;
+  display: flex;
 }
 
 .slick-list {
