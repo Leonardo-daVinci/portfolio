@@ -21,7 +21,7 @@ function MiniSideBar(){
     return (
         <>
         <Disclosure as="nav">
-         <Disclosure.Button className=" lg:hidden fixed top-5 left-5 z-20 inline-flex items-center 
+         <Disclosure.Button className=" lg:hidden fixed z-20 inline-flex items-center 
          peer justify-center rounded-full p-5
           text-my-text-light dark:text-white
          bg-white dark:bg-[#1f1f1f]
