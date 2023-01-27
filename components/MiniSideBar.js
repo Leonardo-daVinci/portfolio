@@ -21,12 +21,13 @@ function MiniSideBar(){
     return (
         <>
         <Disclosure as="nav">
-         <Disclosure.Button className="fixed top-8 left-4 z-20 inline-flex items-center 
-         peer justify-center rounded-md p-2 text-my-text-light dark:text-white
-         bg-card-light dark:bg-card-dark
+         <Disclosure.Button className=" lg:hidden fixed top-5 left-5 z-20 inline-flex items-center 
+         peer justify-center rounded-full p-5
+          text-my-text-light dark:text-white
+         bg-white dark:bg-[#1f1f1f]
          hover:bg-hover-bg-light dark:hover:bg-card-dark focus:bg-hover-bg-light dark:focus:bg-hover-bg-dark
          focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-white group">
-            <GiHamburgerMenu className=' block md:hidden h-6 w-6 ' aria-hidden="true" />
+            <GiHamburgerMenu className=' block md:hidden text-2xl' aria-hidden="true" />
          </Disclosure.Button>
 
             <div className=' p-6 w-1/2 h-screen bg-card-light z-20 fixed top-0 -left-96 rounded-r-2xl lg:rounded-r-none
@@ -51,16 +52,15 @@ function MiniSideBar(){
                     <div className='my-4 pb-4 font-productsans
                     text-gray-600 dark:text-gray-200'>
                         <Link href="/">
-                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
+                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 lg:px-5
                          hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
                           dark:hover:bg-hover-bg-dark 
                          hover:text-gray-800 dark:hover:text-white'>
                         
-                        <div className=' flex flex-row items-center justify-center w-full'>
+                        <div className=' flex flex-row items-center justify-center lg:w-full'>
 
                         <BsArrowLeft className=' text-lg' />
                         <AiFillHome className='mx-2 text-2xl ' />
-                        
 
                         </div>
                         <h3 className='lg:text-base text-lg'>Home</h3>

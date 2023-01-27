@@ -10,8 +10,6 @@ import intel from "../public/intel.png"
 import udacity from "../public/udacity.png"
 import unity from "../public/unity.png"
 import gcloud from "../public/gcloud.png"
-import certificate from "../public/certificate.png"
-import achieve from "../public/achievement.png"
 import Achievement from "../components/Achievement";
 import MiniSideBar from "../components/MiniSideBar";
 
@@ -29,9 +27,17 @@ export default function Details(){
             </Head>
             <MiniSideBar />
 
+            <div className="lg:hidden fixed top-0 w-full bg-white dark:bg-[#1f1f1f]">
+                <div className=" p-5 flex justify-end dark:text-white">
+                <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className=" cursor-pointer text-2xl" />
+                </div>
+                
+            </div>
+
+
             <main className=' bg-white px-5 md:px-5 lg:px-40 lg:ml-28 dark:bg-[#1f1f1f]' >
 
-                <nav className='fixed z-10 top-10 right-4 lg:right-10 flex justify-between dark:text-white'>
+                <nav className='hidden lg:block fixed z-10 top-10 right-4 lg:right-10 flex justify-between dark:text-white'>
                     <ul className='flex items-center'>
                      <li><BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className=' cursor-pointer text-2xl'/>
                      </li>
@@ -39,10 +45,10 @@ export default function Details(){
                     </ul>
                 </nav>
 
-                <section>
+                <section  id="details-c" className="pt-10 lg:pt-0">
 
-                <div id="details-c" className=' font-productsans'>
-                <h3 className='text-center lg:text-start text-5xl pt-10 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark '>Certifications</h3>
+                <div className=' font-productsans'>
+                <h3 className='text-center lg:text-start text-5xl pt-5 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark '>Certifications</h3>
                 <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'>
                     This section includes an exhaustive list of certifications in machine learning, data science, mobile application development and cloud skills.
                     <br></br>
@@ -125,10 +131,10 @@ export default function Details(){
                 </div>
                 </section>
 
-                <section>
+                <section  id="details-a">
 
-                <div id="details-a" className=' font-productsans'>
-                <h3 className='text-center lg:text-start text-5xl pt-10 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark '>Achievements</h3>
+                <div className=' font-productsans pt-10 lg:pt-0'>
+                <h3 className='text-center lg:text-start text-5xl pt-5 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark '>Achievements</h3>
                 <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'>
                 This section shows my accomplishments and awards in the fields of machine learning and developing real world applications, and serves as a testament to my skills.
                 </p>
