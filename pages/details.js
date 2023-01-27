@@ -37,7 +37,7 @@ export default function Details(){
 
             <main className=' bg-white px-5 md:px-5 lg:px-40 lg:ml-28 dark:bg-[#1f1f1f]' >
 
-                <nav className='hidden lg:block fixed z-10 top-10 right-4 lg:right-10 flex justify-between dark:text-white'>
+                <nav className='hidden lg:block fixed z-10 top-10 right-4 lg:right-10 justify-between dark:text-white'>
                     <ul className='flex items-center'>
                      <li><BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className=' cursor-pointer text-2xl'/>
                      </li>

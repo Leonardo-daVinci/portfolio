@@ -44,18 +44,21 @@ export default function Home() {
         <link rel="icon" href={`${process.env.NEXT_PUBLIC_FAVICON}/favicon.ico`}/>
       </Head>
       <SideNavBar/>
+
+      <div className="lg:hidden fixed top-0 w-full z-10 bg-white dark:bg-[#1f1f1f]">
+        <div className=" p-5 flex justify-end dark:text-white">
+        <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className=" cursor-pointer text-2xl" />
+        </div>
+      </div>
+
       <main className=' bg-white px-5 md:px-5 lg:ml-20 lg:px-40 dark:bg-[#1f1f1f]'>
 
         {/* HOMEPAGE SECTION */}
 
-        <nav className='fixed z-10 top-10 right-4 lg:right-10 flex justify-between dark:text-white'>
-          {/* <h1 className=' text-lg font-productsans'>Leonardo-daVinci</h1> */}
+        <nav className='hidden lg:block fixed z-10 top-10 right-4 lg:right-10 justify-between dark:text-white'>
           <ul className='flex items-center'>
               <li><BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className=' cursor-pointer text-2xl
               '/></li>
-              {/* <li><a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-productsans px-4 py-2 rounded-md ml-8' 
-              href='/portfolio/Akshit_Resume.pdf' target="_blank" rel="noreferrer">
-                Resume</a></li> */}
           </ul>
         </nav>
 
@@ -122,7 +125,7 @@ export default function Home() {
 
         <section>
           <div id="my-skills" className=' font-productsans pt-10'>
-              <h3 className='text-center lg:text-start text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>My skills</h3>
+              <h3 className='text-center lg:text-start text-5xl pt-5 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>My skills</h3>
               <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
               I have a strong background in mathematics and computer science and 
               have been working on developing my skills in ML techniques and algorithms.
@@ -225,7 +228,7 @@ export default function Home() {
         {/* PORTFOLIO SECTION */}
         <section>
           
-          <div id="my-projects" className=' font-productsans'>
+          <div id="my-projects" className=' font-productsans pt-10'>
           <h3 className='text-center lg:text-start text-5xl pt-10 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark '>Portfolio</h3>
           <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'>
           As a Machine Learning Engineer, my projects include a wide range of applications of ML techniques - computer vision, natural language processing, prediction, and reinforcement learning.
@@ -254,7 +257,7 @@ export default function Home() {
         {/* EDUCATION */}
         <section>
         <div id="my-academics" className=' font-productsans pt-10'>
-              <h3 className='text-center lg:text-start text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Academic background</h3>
+              <h3 className='text-center lg:text-start text-5xl pt-10 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Academic background</h3>
               <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
                 Summary of my Masters Degree <span>&#40;</span>ongoing<span>&#41;</span> and Bachelors Degree.
               </p>
@@ -443,7 +446,7 @@ export default function Home() {
             {/* MERITS */}
           <section>
           <div id="my-merits" className=' font-productsans pt-10'>
-              <h3 className='text-center lg:text-start text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Certifications and Achievements</h3>
+              <h3 className='text-center lg:text-start text-5xl pt-10 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Certifications and Achievements</h3>
               <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
                 This section includes certifications in machine learning, deep learning and data science, recognition in hackathons, competitions and DevFests, and awards and publications.
                  <br></br>  It showcases my dedication to continuously learn and improve my skills.
@@ -471,7 +474,7 @@ export default function Home() {
         {/* EXTRAS */}
         <section>
         <div id="my-hobbies" className=' font-productsans pt-10'>
-              <h3 className='text-center lg:text-start text-5xl py-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Co-curricular Activities</h3>
+              <h3 className='text-center lg:text-start text-5xl pt-10 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Co-curricular Activities</h3>
               <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
                 This section includes my involvement in student clubs, hobbies and other personal info. 
               </p>
