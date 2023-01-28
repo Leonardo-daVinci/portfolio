@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import {BsArrowRight} from "react-icons/bs"
+import {BsArrowRight, BsArrowLeft} from "react-icons/bs"
 
 import Image from 'next/image'
 import coursera from "../public/coursera-logo.png"
@@ -19,6 +19,32 @@ import Achievement from "./Achievement";
 
 function Carousel() {
 
+    // Experimental Section
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            onClick={onClick}
+          >
+            <BsArrowRight className=" text-2xl ml-5 hover:text-my-text-light dark:hidden"/>
+          </div>
+        );
+      }
+      
+      function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+            className={className}
+            onClick={onClick}
+          >
+            <BsArrowLeft className=" text-2xl hover:text-my-text-light dark:hidden"/>
+          </div>
+        );
+      }
+
+
     const settings = {
       dots: false,
       infinite: false,
@@ -26,6 +52,8 @@ function Carousel() {
       slidesToShow: 3,
       slidesToScroll: 3,
       initialSlide: 0,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
       adaptiveHeight: true,
       responsive: [
         {

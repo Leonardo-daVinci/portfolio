@@ -92,6 +92,10 @@ a {
   margin: 0 -10px;
 }
 
+.slick-prev, .slick-next {
+  color: #1f1f1f
+}
+
 
 @font-face {
   font-family: "productsans";

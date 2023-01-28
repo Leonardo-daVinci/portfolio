@@ -10,7 +10,7 @@ function Certificate({img, name, source, link}){
            bg-card-light hover:bg-hover-bg-light
             dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
                 <div className='flex justify-center rounded-xl
-                 bg-white dark:bg-hover-bg-light'>
+                 bg-white dark:bg-card-light'>
                     <Image src={img} width={"50%"} height={"50%"} layout="responsive"/>
                 </div>
                 <h3 className=' text-2xl pt-4 pb-2'>{name}</h3>
