@@ -12,6 +12,8 @@ import machine from '../public/machine.png'
 import tools from '../public/tools.png'
 
 import gdc from "../public/gdc-logo.png"
+import club from "../public/club.png"
+import ais from "../public/ais.png"
 
 import reading from "../public/reading.png"
 import gym from "../public/physical-activity.png"
@@ -483,14 +485,14 @@ export default function Home() {
           <div className='container mx-auto'>
                   <div className='grid-cols-3 pt-10 space-y-2 lg:space-y-0 lg:grid lg:gap-5'>
                       
-                      <div className=' font-productsans text-center p-5 rounded-xl flex-1 group
+                      <div className=' font-productsans text-center p-5 rounded-xl flex flex-col justify-center group
                       bg-card-light hover:bg-hover-bg-light 
                       dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
                         <div className='flex justify-center'>
-                        <Image src={gdc} width={100} height={100}/>
+                        <Image src={club} width={100} height={100}/>
                         </div>
-                        <h3 className=' text-2xl pt-8 pb-2'>Student Mentor</h3>
-                        <p className='py-2'>
+                        <h3 className=' text-2xl pt-4 pb-2'>Student Mentor</h3>
+                        <p className='pb-2'>
                           Google Developer Student Clubs <br></br>MES College of Engineering
                         </p>
                         </div>
@@ -512,14 +514,14 @@ export default function Home() {
             <div className='container mx-auto'>
                   <div className='grid-cols-3 pt-5 space-y-2 lg:space-y-0 lg:grid lg:gap-5'>
                       
-                      <div className=' font-productsans text-center p-5 rounded-xl flex-1 group
+                      <div className=' font-productsans text-center p-5 rounded-xl flex flex-col justify-center group
                       bg-card-light hover:bg-hover-bg-light 
                       dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
                         <div className='flex justify-center'>
-                        <Image src={lang} width={100} height={100}/>
+                        <Image src={ais} width={100} height={100}/>
                         </div>
-                        <h3 className=' text-2xl pt-8 pb-2'>Director</h3>
-                        <p className='py-2'>
+                        <h3 className=' text-2xl pt-4 pb-2'>Director</h3>
+                        <p className='pb-2'>
                           Association of Indian Students <br></br> University of Southern California
                         </p>
                       </div>

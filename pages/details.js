@@ -3,13 +3,18 @@ import {useState} from 'react'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import Certificate from "../components/Certificate";
 
-import Image from "next/image";
+import Image from 'next/image'
 import coursera from "../public/coursera-logo.png"
 import devfest from "../public/devfest.png"
 import intel from "../public/intel.png"
 import udacity from "../public/udacity.png"
+import udemy from "../public/udemy.png"
 import unity from "../public/unity.png"
 import gcloud from "../public/gcloud.png"
+import apache from "../public/apache.png"
+import assist from "../public/g-assist.png"
+import ibm from "../public/ibm.png"
+
 import Achievement from "../components/Achievement";
 import MiniSideBar from "../components/MiniSideBar";
 
@@ -24,6 +29,7 @@ export default function Details(){
                 <title>Akshit Keoliya Certifications</title>
                 <meta name="description" content="List of all the certifications and achievements" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href={`${process.env.NEXT_PUBLIC_FAVICON}/favicon.ico`}/>
             </Head>
             <MiniSideBar />
 
@@ -56,7 +62,16 @@ export default function Details(){
                 </p>
                 </div>
 
-                <div className="my-10 container grid lg:grid-cols-3 gap-5 mx-auto">
+                <div className="my-10 container grid lg:grid-cols-4 gap-4 mx-auto">
+
+                {/* Coursera Certificates */}
+
+                <Certificate 
+                img={coursera}
+                name="TensorFlow Developer Specialization"
+                source="DeepLearning.AI"
+                link="https://coursera.org/share/ea025eb7e88138cfcbac4cf00ff673f9" 
+                />
                 
                 <Certificate 
                 img={coursera}
@@ -72,46 +87,80 @@ export default function Details(){
                 link="https://coursera.org/share/b5fea1b15974aa58b6e1233d10cb3dac" 
                 />
 
-            {/* Qwiklabs Certificate 1*/}
+                <Certificate 
+                img={coursera}
+                name="Convolutional Neural Networks in TensorFlow"
+                source="DeepLearning.AI"
+                link="https://coursera.org/share/5df47f9480c647ddde06ac7a1437f0cf" 
+                />
+
+                <Certificate 
+                img={coursera}
+                name="Sequence, Time Series and Prediction"
+                source="DeepLearning.AI"
+                link="https://coursera.org/share/85833a94a7eeef74a2e8904914bc84de" 
+                />
+
+                {/* IBM Skill Network */}
+                <Certificate
+                img={ibm}
+                name="Deep Learning"
+                source="IBM - Cognitive Class"
+                link="https://www.credly.com/badges/7bdc937c-012d-4cce-af13-fb4b094541fe"
+                />
+
+                <Certificate
+                img={ibm}
+                name="Data Science Foundations"
+                source="IBM - Cognitive Class"
+                link="https://www.credly.com/badges/0a40eaaa-fff2-4905-aaa2-08665d57b79a"
+                />
+
+                <Certificate
+                img={ibm}
+                name="Python for Data Science"
+                source="IBM - Cognitive Class"
+                link="https://www.credly.com/badges/69418037-5038-4e0f-831d-302ced9a5c84"
+                />
+
+                <Certificate
+                img={ibm}
+                name="Accelerated Deep Learning with GPU"
+                source="IBM - Cognitive Class"
+                link="https://www.credly.com/badges/e27a8e7a-001f-4921-a28e-9a0e3a18f18f"
+                />
+
+                {/* Qwiklabs Certificate*/}
 
                 <Certificate 
                     img={gcloud}
-                    name="Machine Learning Path"
+                    name="Google Cloud Skill Boost"
                     source="Google Cloud"
                     link="https://www.cloudskillsboost.google/public_profiles/244b103e-debd-4b14-a0f6-90ebc3705404"
                 />
 
-                {/* Coursera Certificate  2*/}
-
                 <Certificate 
-                    img={coursera}
-                    name="Convolutional Neural Networks in TensorFlow"
-                    source="DeepLearning.AI"
-                    link="https://coursera.org/share/5df47f9480c647ddde06ac7a1437f0cf" 
+                    img={gcloud}
+                    name="Google Developer Essentials"
+                    source="Google Cloud"
+                    link="https://www.cloudskillsboost.google/public_profiles/244b103e-debd-4b14-a0f6-90ebc3705404/badges/148994"
                 />
 
-          
-                {/* Coursera Certificate  3*/}
-
                 <Certificate 
-                    img={coursera}
-                    name="Natural Language Processing in TensorFlow"
-                    source="DeepLearning.AI"
-                    link="https://coursera.org/share/d8438d9d4d830342f83649642936bdfd" 
+                    img={gcloud}
+                    name="Build Interactive Apps with Google Assistant"
+                    source="Google Cloud"
+                    link="https://www.cloudskillsboost.google/public_profiles/244b103e-debd-4b14-a0f6-90ebc3705404/badges/149155"
                 />
 
-
-                {/* Coursera Certificate  4*/}
-
                 <Certificate 
-                    img={coursera}
-                    name="Sequence, Time Series and Prediction"
-                    source="DeepLearning.AI"
-                    link="https://coursera.org/share/85833a94a7eeef74a2e8904914bc84de" 
+                    img={gcloud}
+                    name="TensorFlow on Google Cloud"
+                    source="Google Cloud"
+                    link="https://www.cloudskillsboost.google/public_profiles/244b103e-debd-4b14-a0f6-90ebc3705404/badges/146779"
                 />
 
-
-                {/* Udacity Certificate  1*/}
+                {/* Udacity Certificate */}
 
                 <Certificate 
                     img={udacity}
@@ -120,14 +169,21 @@ export default function Details(){
                     link="https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187"
                 />
 
-                {/* Udacity Certificate  1*/}
-
                 <Certificate 
                     img={udacity}
                     name="Developing Android Apps with Kotlin"
                     source="Google"
                     link="https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012"
                 />
+
+                {/* Udemy Courses */}
+                <Certificate
+                img={udemy}
+                name="Progressive Web App Bootcamp"
+                source="Udemy"
+                link="https://www.udemy.com/certificate/UC-2cb6a0fc-2bc3-445d-84d8-dad3038a0ee5/"
+                />
+
                 </div>
                 </section>
 
@@ -167,11 +223,27 @@ export default function Details(){
                 />
 
                 <Achievement
+                img={assist}
+                name="Google Assistant Developer Prize"
+                source="Google"
+                des="Won a Google Home Mini for creating mutiple apps using Google Cloud Actions and DialogFlow for Google Assistant."
+                />
+
+                <Achievement
+                img={apache}
+                name="Apache Cassandra Workshop Winner"
+                source="DataStax, Inc."
+                des="Workshop by Developer Advocate team of DataStax to learn fundamentals and basics of Astra DB, cloud based NOSQL Apache Cassandra-as-Service Platform."
+                />
+
+                <Achievement
                 img={unity}
                 name="Unity Game Development Competition"
                 source="College of Engineering, Pune"
                 des="Built a game development project - Open World Runner - using Unity Game Engine, featuring 3D graphics and gameplay mechanics. "
                 />
+
+                
 
                 </div>
 

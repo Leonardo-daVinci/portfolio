@@ -9,7 +9,7 @@ function Blocks({skill, image}){
             <div className='flex justify-center my-2 mt-5' >
                     <img height="32" width="32" src={image} />
             </div>
-            <p className='pb-2' >{skill}</p>
+            <p className='px-2 pb-2' >{skill}</p>
             </div>
         </>
     )
