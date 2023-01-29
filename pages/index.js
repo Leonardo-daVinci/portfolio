@@ -339,16 +339,16 @@ export default function Home() {
               <p className='text-xl pb-4 dark:text-white'>MES College of Engineering, Pune, India</p>
               </div>
               <div className='container mx-auto font-productsans'>
-                <div className=' grid-cols-1 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
+                <div className='grid-cols-1 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2'>
 
                 <Course 
                   id="BE" name="Final Year Engineering"
                   des={
                     <div className='container mx-auto font-productsans'>
-                        <div className=' lg:grid-cols-2 p-2 space-y-2 lg:space-y-0 lg:grid lg:gap-2'>
-                          <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 7</p>
-                          <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 8</p>
-                          <p className='lg:hidden text-md text-my-text-light dark:text-my-text-dark'>Semester 7 and 8</p>
+                        <div className=' md:grid-cols-2 p-2 space-y-2 md:space-y-0 md:grid md:gap-2'>
+                          <p className='hidden md:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 7</p>
+                          <p className='hidden md:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 8</p>
+                          <p className='md:hidden text-md text-my-text-light dark:text-my-text-dark'>Semester 7 and 8</p>
                           <p>Artificial Intelligence and Robotics</p>
                           <p>Machine Learning</p>
                           <p>Data Analytics</p>
@@ -368,10 +368,10 @@ export default function Home() {
                   id="TE" name="Third Year Engineering"
                   des={
                     <div className='container mx-auto font-productsans'>
-                        <div className=' grid-cols-2 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
-                        <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 5</p>
-                          <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 6</p>
-                          <p className='lg:hidden text-md text-my-text-light dark:text-my-text-dark'>Semester 5 and 6</p>
+                        <div className=' md:grid-cols-2 p-2 space-y-2 md:space-y-0 md:grid md:gap-2'>
+                          <p className='hidden md:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 5</p>
+                          <p className='hidden md:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 6</p>
+                          <p className='md:hidden text-md text-my-text-light dark:text-my-text-dark'>Semester 5 and 6</p>
                           <p>Theory of Computation</p>
                           <p>Design and Analysis of Algorithms</p>
                           <p>Database Management Systems</p>
@@ -391,10 +391,10 @@ export default function Home() {
                   id="SE" name="Second Year Engineering"
                   des={
                     <div className='container mx-auto font-productsans'>
-                        <div className=' grid-cols-2 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
-                        <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 3</p>
-                          <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 4</p>
-                          <p className='lg:hidden text-md text-my-text-light dark:text-my-text-dark'>Semester 3 and 4</p>
+                        <div className=' md:grid-cols-2 p-2 space-y-2 md:space-y-0 md:grid md:gap-2'>
+                          <p className='hidden md:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 3</p>
+                          <p className='hidden md:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 4</p>
+                          <p className='md:hidden text-md text-my-text-light dark:text-my-text-dark'>Semester 3 and 4</p>
                           <p>Discrete Mathematics</p>
                           <p>Engineering Mathematics III</p>
                           <p>Data Structures and Algorithms</p>
@@ -414,10 +414,10 @@ export default function Home() {
                   id="FE" name="First Year Engineering"
                   des={
                     <div className='container mx-auto font-productsans'>
-                        <div className=' grid-cols-2 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-2 lg:grid-row-2'>
-                        <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 1</p>
-                          <p className='hidden lg:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 2</p>
-                          <p className='lg:hidden text-md text-my-text-light dark:text-my-text-dark'>Semester 1 and 2</p>
+                        <div className=' md:grid-cols-2 p-2 space-y-2 md:space-y-0 md:grid md:gap-2'>
+                          <p className='hidden md:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 1</p>
+                          <p className='hidden md:block text-2xl text-my-text-light dark:text-my-text-dark'>Semester 2</p>
+                          <p className='md:hidden text-md text-my-text-light dark:text-my-text-dark'>Semester 1 and 2</p>
                         <p>Engineering Mathematics I</p>
                         <p>Engineering Mathematics II</p>
                         <p>Engineering Physics</p>
@@ -483,7 +483,7 @@ export default function Home() {
           </div>
 
           <div className='container mx-auto'>
-                  <div className='grid-cols-3 pt-10 space-y-2 lg:space-y-0 lg:grid lg:gap-5'>
+                  <div className='md:grid-cols-3 gap-2 pt-10 space-y-2 lg:space-y-0 md:grid lg:gap-5'>
                       
                       <div className=' font-productsans text-center p-5 rounded-xl flex flex-col justify-center group
                       bg-card-light hover:bg-hover-bg-light 
@@ -512,7 +512,7 @@ export default function Home() {
             </div>
 
             <div className='container mx-auto'>
-                  <div className='grid-cols-3 pt-5 space-y-2 lg:space-y-0 lg:grid lg:gap-5'>
+                  <div className='md:grid-cols-3 gap-2 pt-5 space-y-2 lg:space-y-0 md:grid lg:gap-5'>
                       
                       <div className=' font-productsans text-center p-5 rounded-xl flex flex-col justify-center group
                       bg-card-light hover:bg-hover-bg-light 

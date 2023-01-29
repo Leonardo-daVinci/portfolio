@@ -27,10 +27,10 @@ function MiniSideBar(){
          bg-white dark:bg-[#1f1f1f]
          hover:bg-hover-bg-light dark:hover:bg-card-dark focus:bg-hover-bg-light dark:focus:bg-hover-bg-dark
          focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-white group">
-            <GiHamburgerMenu className=' block md:hidden text-2xl' aria-hidden="true" />
+            <GiHamburgerMenu className=' block text-2xl' aria-hidden="true" />
          </Disclosure.Button>
 
-            <div className=' p-6 w-1/2 h-screen bg-card-light z-20 fixed top-0 -left-96 rounded-r-2xl lg:rounded-r-none
+            <div className=' p-6 w-1/2 md:w-1/5 h-screen bg-card-light z-20 fixed top-0 -left-1/2 rounded-r-2xl lg:rounded-r-none
             lg:w-28 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200
             dark:bg-card-dark'>
                 <div className='flex flex-col justify-start items-center gap-5'>

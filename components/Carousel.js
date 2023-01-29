@@ -27,7 +27,7 @@ function Carousel() {
             className={className}
             onClick={onClick}
           >
-            <BsArrowRight className=" text-2xl ml-5 hover:text-my-text-light dark:hidden"/>
+            <BsArrowRight className="hidden lg:block text-2xl ml-5 hover:text-my-text-light dark:hidden"/>
           </div>
         );
       }
@@ -39,7 +39,7 @@ function Carousel() {
             className={className}
             onClick={onClick}
           >
-            <BsArrowLeft className=" text-2xl hover:text-my-text-light dark:hidden"/>
+            <BsArrowLeft className="hidden lg:block text-2xl hover:text-my-text-light dark:hidden"/>
           </div>
         );
       }
@@ -65,7 +65,7 @@ function Carousel() {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 900,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
