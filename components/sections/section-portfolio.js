@@ -25,7 +25,7 @@ function SectionPortfolio(){
               </div>}
               name = "Multi-Camera Surveillance System"
               des = "Maps individuals in 3D space and predicts their movement using LSTM model."
-              link = ""
+              link = "/portfolio/iosr.pdf"
           />
 
           <Project 
