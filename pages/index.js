@@ -86,7 +86,7 @@ export default function Home() {
             <h2 className=' text-4xl lg:text-6xl py-2 text-my-text-light md:text-6xl dark:text-my-text-dark'>Akshit Abhay Keoliya</h2>
             <h3 className=' text-xl pt-2 md:text-3xl dark:text-white'>Machine Learning Enthusiast and Developer</h3>
             <p className=' text-md py-5 lg:leading-8 text-gray-800v md:text-xl max-w-xl mx-auto dark:text-gray-200'>
-            Completing my master<span>&apos;</span>s in Computer Science at 
+            Master<span>&apos;</span>s in Computer Science, Artificial Intelligence at 
             <span className='text-[#0b57d0] dark:text-[#a8c7fa]'><a href='https://www.usc.edu/'> USC</a></span>.
             <br></br>
             Excited to apply my knowledge to real-world problems and help organizations improve their operations and decision-making through machine learning!
@@ -261,7 +261,7 @@ export default function Home() {
         <div id="my-academics" className=' font-productsans pt-10'>
               <h3 className='text-center lg:text-start text-5xl pt-10 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark'>Academic background</h3>
               <p className=' text-md pt-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'> 
-                Summary of my Masters Degree <span>&#40;</span>ongoing<span>&#41;</span> and Bachelors Degree.
+                Summary of my Masters Degree and Bachelors Degree coursework.
               </p>
           </div>
 
