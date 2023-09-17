@@ -96,7 +96,7 @@ export default function Home() {
               <a className=' bg-my-text-light dark:bg-my-text-dark text-white dark:text-gray-800
               text-2xl
               font-productsans px-8 py-4 rounded-full' 
-              href='/portfolio/Akshit_Resume.pdf' target="_blank" rel="noreferrer">
+              href='/portfolio/Akshit_Keoliya_Resume.pdf' target="_blank" rel="noreferrer">
                 Curriculum Vitae
               </a>
               </div>
