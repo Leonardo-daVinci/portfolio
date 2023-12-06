@@ -12,7 +12,8 @@ function SectionMerits(){
         <Heading 
         title="Certifications and Achievements"
         desc={<>
-        This section includes certifications in machine learning, deep learning and data science, recognition in hackathons, competitions and DevFests, and awards and publications.
+        This section includes certifications in machine learning, deep learning and data science, recognition in hackathons, 
+        competitions and DevFests, and awards and publications.
         <br></br>  It showcases my dedication to continuously learn and improve my skills.
         </>}
         />

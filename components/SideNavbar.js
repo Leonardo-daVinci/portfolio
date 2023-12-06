@@ -93,7 +93,7 @@ function SideNavBar(){
                         </div>
                         </a> */}
 
-                        <a href='#my-projects'>
+                        <a href='#my-portfolio'>
                         <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
                          hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
                           dark:hover:bg-hover-bg-dark 
@@ -123,7 +123,7 @@ function SideNavBar(){
                         </div>
                         </a>
 
-                        <a href="#my-hobbies">
+                        <a href="#my-extras">
                         <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
                          hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
                           dark:hover:bg-hover-bg-dark 
