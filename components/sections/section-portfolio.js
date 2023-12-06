@@ -11,7 +11,6 @@ import tflite from "../../public/tflite.png"
 
 
 import Chips from "../Legos/Chips";
-import ViewBtn from "../Legos/ViewBtn";
 import Project from "../Legos/Project";
 import Heading from "../Legos/Heading";
 
