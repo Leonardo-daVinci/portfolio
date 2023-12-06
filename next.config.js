@@ -4,7 +4,10 @@ const nextConfig = {
   distDir: "build",
   basePath: "/portfolio",
   assetPrefix: "/portfolio",
-  images: {unoptimized: true}
+  images: {unoptimized: true},
+  experimental:{
+    zoom: 1.25
+  }
 }
 
 module.exports = nextConfig

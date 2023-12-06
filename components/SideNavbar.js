@@ -22,6 +22,7 @@ import {
     FaBrain,
     FaCertificate
 } from "react-icons/fa"
+import NavItem from './Legos/NavItem'
 
 
 function SideNavBar(){
@@ -58,96 +59,53 @@ function SideNavBar(){
 
                     <div className='my-4 pb-4 font-productsans
                     text-gray-600 dark:text-gray-200'>
-                        <a href='#home'>
-                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
-                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark 
-                         hover:text-gray-800 dark:hover:text-white'>
-                        <AiFillHome className='mx-2 text-2xl ' />
-                        <h3 className='lg:text-base text-lg'>Home</h3>
-                        </div>
-                        </a>
 
-                        <a href='#my-skills'>
-                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
-                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark 
-                         hover:text-gray-800 dark:hover:text-white'>
-                        <FaBrain className='mx-2 text-2xl ' />
-                        <h3 className='lg:text-base text-lg'>Skills</h3>
-                        </div>
-                        </a>
-
-                        {/* <a href='#my-skills'>
-                        <div className=' mb-2 justify-start items-center text-center gap-4 px-5 hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto dark:hover:bg-hover-bg-dark'>
-                        <FaBrain className=' text-2xl text-gray-800  w-full dark:text-white' />
-                        <h3 className='text-base font-productsans text-gray-800  dark:text-white'>Skills</h3>
-                        </div>
-                        </a> */}
+                        <NavItem 
+                            title="Home"
+                            icon={<AiFillHome className='mx-2 text-2xl ' />}
+                            anchor="#home"
+                        />
                         
+                        <NavItem 
+                            title="Skills"
+                            icon={<FaBrain className='mx-2 text-2xl ' />}
+                            anchor="#my-skills"
+                        />
 
-                        {/* <a href='#my-skills'>
-                        <div className='flex mb-2 justify-start items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto'>
-                        <GiBrain className=' text-2xl text-gray-600 group-hover:text-white' />
-                        <h3 className='text-base text-gray-800 group-hover:text-white '>Skills</h3>
-                        </div>
-                        </a> */}
+                        <NavItem 
+                            title="Portfolio"
+                            icon={<GiOpenFolder className='mx-2 text-2xl ' />}
+                            anchor="#my-portfolio"
+                        />
 
-                        <a href='#my-portfolio'>
-                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
-                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark 
-                         hover:text-gray-800 dark:hover:text-white'>
-                        <GiOpenFolder className='mx-2 text-2xl ' />
-                        <h3 className='lg:text-base text-lg'>Portfolio</h3>
-                        </div>
-                        </a>
+                        <NavItem 
+                            title="Study"
+                            icon={<HiAcademicCap className='mx-2 text-2xl ' />}
+                            anchor="#my-academics"
+                        />
 
-                        <a href="#my-academics">
-                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
-                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark 
-                         hover:text-gray-800 dark:hover:text-white'>
-                        <HiAcademicCap className='mx-2 text-2xl ' />
-                        <h3 className='lg:text-base text-lg'>Study</h3>
-                        </div>
-                        </a>
+                        <NavItem 
+                            title="Merits"
+                            icon={<FaCertificate className='mx-2 text-2xl ' />}
+                            anchor="#my-merits"
+                        />  
 
-                        <a href="#my-merits">
-                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
-                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark 
-                         hover:text-gray-800 dark:hover:text-white'>
-                        <FaCertificate className='mx-2 text-2xl ' />
-                        <h3 className='lg:text-base text-lg'>Merits</h3>
-                        </div>
-                        </a>
-
-                        <a href="#my-extras">
-                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
-                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark 
-                         hover:text-gray-800 dark:hover:text-white'>
-                        <GiJigsawPiece className='mx-2 text-2xl ' />
-                        <h3 className='lg:text-base text-lg'>Extras</h3>
-                        </div>
-                        </a>
+                        <NavItem 
+                            title="Extras"
+                            icon={<GiJigsawPiece className='mx-2 text-2xl ' />}
+                            anchor="#my-extras"
+                        />
 
                         <a href='https://keoliya.hashnode.dev/' target="_blank" rel="noreferrer">
-                        <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
-                         hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
-                          dark:hover:bg-hover-bg-dark 
-                         hover:text-gray-800 dark:hover:text-white'>
-                        <MdOutlineNotes className='mx-2 text-2xl ' />
-                        <h3 className='lg:text-base text-lg'>Blog</h3>
-                        </div>
+                            <div className='flex lg:flex-col lg:flex-none mb-2 justify-start items-center lg:gap-1 px-5
+                            hover:bg-hover-bg-light p-2 rounded-md group cursor-pointer m-auto
+                            dark:hover:bg-hover-bg-dark 
+                            hover:text-gray-800 dark:hover:text-white'>
+                            <MdOutlineNotes className='mx-2 text-2xl ' />
+                            <h3 className='lg:text-base text-lg'>Blog</h3>
+                            </div>
                         </a>
                     </div>
-
-                    {/* <div className='my-4 '>
-                    <a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-productsans px-10 py-2 rounded-md' href='#'>Resume</a>
-                    </div> */}
-
                 </div>
 
             </div>

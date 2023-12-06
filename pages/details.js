@@ -5,7 +5,6 @@ import Certificate from "../components/Legos/Certificate";
 import Achievement from "../components/Legos/Achievement";
 import MiniSideBar from "../components/Legos/MiniSideBar";
 
-import Image from 'next/image'
 import coursera from "../public/coursera-logo.png"
 import devfest from "../public/devfest.png"
 import intel from "../public/intel.png"
