@@ -3,16 +3,16 @@ import Slider from "react-slick";
 import {BsArrowRight, BsArrowLeft} from "react-icons/bs"
 
 import Image from 'next/image'
-import coursera from "../public/coursera-logo.png"
-import devfest from "../public/devfest.png"
-import intel from "../public/intel.png"
-import udacity from "../public/udacity.png"
-import udemy from "../public/udemy.png"
-import unity from "../public/unity.png"
-import gcloud from "../public/gcloud.png"
-import certificate from "../public/certificate.png"
-import achieve from "../public/achievement.png"
-import ibm from "../public/ibm.png"
+import coursera from "../../public/coursera-logo.png"
+import devfest from "../../public/devfest.png"
+import intel from "../../public/intel.png"
+import udacity from "../../public/udacity.png"
+import udemy from "../../public/udemy.png"
+import unity from "../../public/unity.png"
+import gcloud from "../../public/gcloud.png"
+import certificate from "../../public/certificate.png"
+import achieve from "../../public/achievement.png"
+import ibm from "../../public/ibm.png"
 
 import Certificate from "./Certificate";
 import Achievement from "./Achievement";

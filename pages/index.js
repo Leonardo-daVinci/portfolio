@@ -25,12 +25,12 @@ import art from "../public/digital-art.png"
 import {useState} from 'react'
 import Link from 'next/link'
 import SideNavBar from '../components/SideNavbar'
-import Chips from '../components/Chips'
-import Blocks from '../components/Blocks'
-import Course from '../components/Course'
-import Carousel from '../components/Carousel'
-import Bullet from '../components/Bullet'
-import ViewBtn from '../components/ViewBtn'
+import Chips from '../components/Legos/Chips'
+import Blocks from '../components/Legos/Blocks'
+import Course from '../components/Legos/Course'
+import Carousel from '../components/Legos/Carousel'
+import Bullet from '../components/Legos/Bullet'
+import ViewBtn from '../components/Legos/ViewBtn'
 import SectionPortfolio from '../components/sections/section-portfolio'
 
 export default function Home() {
@@ -229,30 +229,8 @@ export default function Home() {
 
         {/* PORTFOLIO SECTION */}
         <section>
-          
-          <div id="my-projects" className=' font-productsans pt-10'>
-          <h3 className='text-center lg:text-start text-5xl pt-10 pb-2 text-my-text-light md:text-4xl dark:text-my-text-dark '>Portfolio</h3>
-          <p className=' text-md py-5 leading-8 text-gray-800v md:text-xl dark:text-gray-200'>
-          As a Machine Learning Engineer, my projects include a wide range of applications of ML techniques - computer vision, natural language processing, prediction, and reinforcement learning.
-          Along with these, I enjoy building mobile applications and webapps using popular frameworks like React.  
-          <br></br>
-          These following projects highlight my ability to apply my knowledge to real-world problems and to deliver value to business and organizations.
-          </p>
-          </div>
 
           <SectionPortfolio />
-
-          <a href='https://github.com/Leonardo-daVinci' target="_blank" rel="noreferrer">
-          <div className=' flex justify-end'>
-          <div className='font-productsans text-center rounded-2xl mb-10 group p-5 lg:w-1/2
-          flex items-center
-           bg-card-light hover:bg-hover-bg-light
-            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-            <h3 className='text-center w-full text-2xl'>View all my projects and their code here</h3>
-            <BsArrowRight className=' text-2xl ml-5'/>
-            </div>
-          </div>
-          </a>
           
         </section>
 

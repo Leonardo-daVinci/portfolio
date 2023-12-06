@@ -1,7 +1,9 @@
 import Head from "next/head";
 import {useState} from 'react'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-import Certificate from "../components/Certificate";
+import Certificate from "../components/Legos/Certificate";
+import Achievement from "../components/Legos/Achievement";
+import MiniSideBar from "../components/Legos/MiniSideBar";
 
 import Image from 'next/image'
 import coursera from "../public/coursera-logo.png"
@@ -14,9 +16,6 @@ import gcloud from "../public/gcloud.png"
 import apache from "../public/apache.png"
 import assist from "../public/g-assist.png"
 import ibm from "../public/ibm.png"
-
-import Achievement from "../components/Achievement";
-import MiniSideBar from "../components/MiniSideBar";
 
 export default function Details(){
 

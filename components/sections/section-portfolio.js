@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import {BsArrowRight} from "react-icons/bs"
+
 import amazon from "../../public/amazon-clone.png"
 import fashion from "../../public/hm-fashion.png"
 import vigil from "../../public/vigil-system.png"
@@ -8,13 +10,24 @@ import stocksApp from "../../public/stocksApp.png"
 import tflite from "../../public/tflite.png"
 
 
-import Chips from "../Chips";
-import ViewBtn from "../ViewBtn";
-import Project from "../Project";
+import Chips from "../Legos/Chips";
+import ViewBtn from "../Legos/ViewBtn";
+import Project from "../Legos/Project";
+import Heading from "../Legos/Heading";
 
 function SectionPortfolio(){
     return(
         <>
+
+        <Heading
+        title='Portfolio'
+        desc={<>
+          As a Machine Learning Engineer, my projects include a wide range of applications of ML techniques - computer vision, natural language processing, prediction, and reinforcement learning.
+          Along with these, I enjoy building mobile applications and webapps using popular frameworks like React.  
+          <br></br>
+          These following projects highlight my ability to apply my knowledge to real-world problems and to deliver value to business and organizations.</>}
+        />
+
         <div className="my-10 container grid md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
 
           <Project 
@@ -86,6 +99,19 @@ function SectionPortfolio(){
             />
 
         </div>
+
+        <a href='https://github.com/Leonardo-daVinci' target="_blank" rel="noreferrer">
+          <div className=' flex justify-end'>
+          <div className='font-productsans text-center rounded-2xl mb-10 group p-5 lg:w-1/2
+          flex items-center
+           bg-card-light hover:bg-hover-bg-light
+            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
+            <h3 className='text-center w-full text-2xl'>View all my projects and their code here</h3>
+            <BsArrowRight className=' text-2xl ml-5'/>
+            </div>
+          </div>
+          </a>
+
         </>
     )
 }
