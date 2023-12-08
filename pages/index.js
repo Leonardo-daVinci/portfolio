@@ -12,6 +12,9 @@ import SectionMerits from '../components/sections/section-merits'
 import SectionExtras from '../components/sections/section-extras'
 import SectionSkills from '../components/sections/section-skills'
 
+import Typewriter from 'typewriter-effect'
+import StickyNavbar from '../components/StickyNavbar'
+
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
@@ -25,15 +28,19 @@ export default function Home() {
         <link rel="icon" href={`${process.env.NEXT_PUBLIC_FAVICON}/favicon.ico`}/>
       </Head>
       
-      <SideNavBar/>
+      {/* <SideNavBar/> */}
 
-      <div className="lg:hidden fixed top-0 w-full z-10 bg-white dark:bg-[#1f1f1f]">
+      <StickyNavbar />
+
+      <div className="lg:hidden fixed top-0 w-full z-10 bg-white dark:bg-[#060606]">
         <div className=" p-5 flex justify-end dark:text-white">
         <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className=" cursor-pointer text-2xl" />
         </div>
       </div>
 
-      <main className=' bg-white px-5 md:px-5 lg:ml-20 lg:px-40 dark:bg-[#1f1f1f]'>
+      <main className=' bg-teal-900 px-5 md:px-5 dark:bg-[#060606]'>
+
+        <div className='mx-64'>
 
         {/* HOMEPAGE SECTION */}
 
@@ -44,14 +51,16 @@ export default function Home() {
           </ul>
         </nav>
 
-        <section className='lg:pt-20 pt-16 min-h-screen md:min-h-fit'>
+        <section className='lg:pt-20 pt-16 
+        lg:flex items-center justify-center
+        h-screen md:min-h-fit'>
         
         {/* Navigation Section */}
         
           {/* Introduction */}
 
-          <div className='flex justify-center mx-auto'>
-          <div className='lg:hidden relative rounded-full w-80 h-80 overflow-hidden md:h-96 md:w-96'>
+          <div className='lg:hidden flex justify-center mx-auto'>
+          <div className='relative rounded-full w-80 h-80 overflow-hidden md:h-96 md:w-96'>
           <Image src={avatar2} alt='Avatar' fill="true" objectFit='cover' loading='eager' priority='true' />
           </div>
           </div>
@@ -63,21 +72,37 @@ export default function Home() {
           <Image src={avatar2} alt='Avatar' fill="true" objectFit='cover' loading='eager' priority='true' />
           </div>
           
-          <div className='px-20'>
+          <div className='px-50'>
           <div className=' text-center p-5 lg:p-10 font-productsans'>
-            <h2 className=' text-4xl lg:text-6xl py-2 text-my-text-light md:text-6xl dark:text-my-text-dark'>Akshit Abhay Keoliya</h2>
-            <h3 className=' text-xl pt-2 md:text-3xl dark:text-white'>Machine Learning Enthusiast and Developer</h3>
-            <p className=' text-md py-5 lg:leading-8 text-gray-800v md:text-xl max-w-xl mx-auto dark:text-gray-200'>
+            <h2 className=' text-4xl lg:text-7xl py-2 text-my-text-light md:text-6xl dark:text-my-text-dark'>Akshit Abhay Keoliya</h2>
+
+            {/* <h3 className=' text-xl pt-2 md:text-3xl dark:text-white'>Machine Learning Enthusiast and Developer</h3> */}
+
+            <h3 className=' text-xl pt-2 md:text-5xl dark:text-white'>
+
+            <Typewriter 
+            options={{
+              strings: ['Machine Learning Engineer', 'Data Scientist', 'Web Developer'],
+              autoStart: true,
+              loop: true,
+            }}
+            />
+
+            </h3>
+
+            <p className=' text-md py-5 lg:leading-9 text-gray-800v md:text-4xl max-w-4xl mx-auto dark:text-gray-200'>
             Master<span>&apos;</span>s in Computer Science, Artificial Intelligence at 
             <span className='text-[#0b57d0] dark:text-[#a8c7fa]'><a href='https://www.usc.edu/'> USC</a></span>.
             <br></br>
-            Excited to apply my knowledge to real-world problems and help organizations improve their operations 
-            and decision-making through machine learning!
+            <br/>
+            Applying Machine Learning expertise to real-world problems and helping organizations improve their operations 
+            and decision-making!
               </p>
+              <br></br>
 
               <div className='pt-5'>
               <a className=' bg-my-text-light dark:bg-my-text-dark text-white dark:text-gray-800
-              text-2xl
+              text-4xl
               font-productsans px-8 py-4 rounded-full' 
               href='/portfolio/Akshit_Keoliya_Resume.pdf' target="_blank" rel="noreferrer">
                 Curriculum Vitae
@@ -88,7 +113,7 @@ export default function Home() {
 
           {/* Contacts */}
 
-          <div className=' text-5xl flex justify-center gap-10 py-8 text-gray-600 dark:text-gray-400'>
+          <div className=' text-6xl flex justify-center gap-10 py-8 text-gray-600 dark:text-gray-400'>
             <a href='https://www.linkedin.com/in/akshit-keoliya'><AiFillLinkedin /></a>  
             <a href='https://github.com/Leonardo-daVinci'><AiFillGithub /></a>
             <a href='https://twitter.com/AkshitAbhay'><AiFillTwitterCircle /></a>
@@ -124,6 +149,8 @@ export default function Home() {
         <section id='my-extras'>
             <SectionExtras />
         </section>        
+
+        </div>
 
       </main>
     </div>
