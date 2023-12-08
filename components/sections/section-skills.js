@@ -15,8 +15,7 @@ function SectionSkills(){
         
         <Heading 
         title="My Skills"
-        desc="I have a strong background in mathematics and computer science and have been 
-        working on developing my skills in ML techniques and algorithms"
+        desc="Strong background in Mathematics and Computer science and continuously developing my Machine Learning skills"
         />
 
         {/* Cards */}

@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </div>
 
-      <main className=' bg-teal-900 px-5 md:px-5 dark:bg-[#060606]'>
+      <main className=' bg-white px-5 md:px-5 dark:bg-[#060606]'>
 
         <div className='mx-64'>
 
@@ -53,7 +53,7 @@ export default function Home() {
 
         <section className='lg:pt-20 pt-16 
         lg:flex items-center justify-center
-        h-screen md:min-h-fit'>
+        lg:h-screen md:min-h-fit'>
         
         {/* Navigation Section */}
         

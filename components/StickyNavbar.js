@@ -15,7 +15,7 @@ const links = [
     },
     {
         name: "Projects",
-        hash: "#my-projects"
+        hash: "#my-portfolio"
     },
     {
         name: "Academics",

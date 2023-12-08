@@ -22,7 +22,7 @@ function SectionExtras(){
 
         <Heading 
         title="Co-curricular Activities"
-        desc="This section includes my involvement in student clubs, hobbies and other personal info. "
+        desc="Involvement in Student Clubs, hobbies and other personal info "
         />
 
         <div className='container mx-auto'>
@@ -86,12 +86,13 @@ function SectionExtras(){
 
         <Heading 
         title="Hobbies"
-        desc="My hobbies section includes a variety of activities that I enjoy and that demonstrate my diverse interests. 
-        It provides a glimpse into my personality and demonstrates my ability to balance work and leisure."
+        // desc=" My hobbies section includes a variety of activities that I enjoy and that demonstrate my diverse interests. 
+        // It provides a glimpse into my personality and demonstrates my ability to balance work and leisure."
+        desc="Diverse activities showcasing my personality, work-life balance, and interests."
         />
 
         <div className='container mx-auto'>
-            <div className='lg:grid-cols-3 pt-10 pb-20 space-y-2 lg:space-y-0 grid lg:gap-5
+            <div className='lg:grid-cols-3 pt-10 pb-20 space-y-2 lg:space-y-0 grid lg:gap-8
                   grid-cols-2 gap-2
                   md:gap-2 sm:gap-2'>
 
