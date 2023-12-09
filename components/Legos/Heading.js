@@ -3,7 +3,7 @@ import React from "react";
 function Heading({title, desc}){
     return(
         <>
-        <div id="my-projects" className='font-productsans pt-10'>
+        <div id="my-projects" className='font-productsans pt-10  text-center'>
           <h3 className='flex w-full justify-center items-center 
           text-center lg:text-start text-5xl pt-10 pb-2 text-my-text-light md:text-7xl dark:text-my-text-dark '>{title}</h3>
           <p className=' flex w-full justify-center items-center 

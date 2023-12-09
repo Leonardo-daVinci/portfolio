@@ -40,7 +40,7 @@ export default function Home() {
 
       <main className=' bg-white px-5 md:px-5 dark:bg-[#060606]'>
 
-        <div className='mx-64'>
+        <div className='lg:mx-64'>
 
         {/* HOMEPAGE SECTION */}
 
