@@ -14,6 +14,7 @@ import SectionSkills from '../components/sections/section-skills'
 
 import Typewriter from 'typewriter-effect'
 import StickyNavbar from '../components/StickyNavbar'
+import HorizontalCarousel from '../components/Legos/HorizontalCarousel'
 
 export default function Home() {
 
@@ -21,6 +22,9 @@ export default function Home() {
 
   return (
     <div id="home" className={darkMode ? "dark" : ""}>
+
+{/* <HorizontalCarousel /> */}
+
       <Head>
         <title>Akshit Keoliya Portfolio</title>
         <meta name="description" content="My portfolio website" />
@@ -28,9 +32,9 @@ export default function Home() {
         <link rel="icon" href={`${process.env.NEXT_PUBLIC_FAVICON}/favicon.ico`}/>
       </Head>
       
-      {/* <SideNavBar/> */}
+      <SideNavBar/>
 
-      <StickyNavbar />
+      {/* <StickyNavbar /> */}
 
       <div className="lg:hidden fixed top-0 w-full z-10 bg-white dark:bg-[#060606]">
         <div className=" p-5 flex justify-end dark:text-white">
@@ -82,7 +86,7 @@ export default function Home() {
 
             <Typewriter 
             options={{
-              strings: ['Machine Learning Engineer', 'Data Scientist', 'Web Developer'],
+              strings: ['Machine Learning Engineer','Business Analyst','Data Scientist', 'Web Developer'],
               autoStart: true,
               loop: true,
             }}
@@ -105,7 +109,7 @@ export default function Home() {
               text-4xl
               font-productsans px-8 py-4 rounded-full' 
               href='/portfolio/Akshit_Keoliya_Resume.pdf' target="_blank" rel="noreferrer">
-                Curriculum Vitae
+                My Résumé
               </a>
               </div>
 

@@ -4,6 +4,7 @@ import {BsArrowRight} from "react-icons/bs"
 import Heading from "../Legos/Heading";
 import Carousel from "../Legos/Carousel";
 import MoreBtn from "../Legos/MoreBtn";
+import HorizontalCarousel from "../Legos/HorizontalCarousel";
 
 
 function SectionMerits(){
@@ -21,6 +22,7 @@ function SectionMerits(){
         />
 
         <Carousel />
+        {/* <HorizontalCarousel /> */}
 
         <Link href="/details">
           <MoreBtn title="View all certifications and achievements"/>

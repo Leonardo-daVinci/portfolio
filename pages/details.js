@@ -241,14 +241,8 @@ export default function Details(){
                 des="Built a game development project - Open World Runner - using Unity Game Engine, featuring 3D graphics and gameplay mechanics. "
                 />
 
-                
-
                 </div>
-
-
-
                 </section>
-
 
             </main>
         </div>
