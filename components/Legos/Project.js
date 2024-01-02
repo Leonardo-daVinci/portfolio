@@ -6,7 +6,7 @@ function Project({img, tags, name, des, link}){
     return(
         <>
         <div className='flex flex-col font-productsans h-[36rem]
-         bg-card-light rounded-3xl hover:bg-hover-bg-light group
+         bg-card-light rounded-3xl group
          scale-100 hover:scale-105 ease-in duration-300
           hover:border-4 hover:border-my-text-light
              dark:bg-card-dark dark:hover:border-my-text-dark'>

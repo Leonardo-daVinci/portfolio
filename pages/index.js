@@ -21,7 +21,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div id="home" className={darkMode ? "dark" : ""}>
+    <div id="home" className={darkMode ? "" : "dark"}>
 
 {/* <HorizontalCarousel /> */}
 
