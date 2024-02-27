@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai'
+import { AiFillMail, AiFillTwitterCircle, AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai'
 import Image from 'next/image'
 import avatar2 from "../public/avatar2.png"
 import {useState} from 'react'
@@ -120,6 +120,7 @@ export default function Home() {
           <div className=' text-6xl flex justify-center gap-10 py-8 text-gray-600 dark:text-gray-400'>
             <a href='https://www.linkedin.com/in/akshit-keoliya'><AiFillLinkedin /></a>  
             <a href='https://github.com/Leonardo-daVinci'><AiFillGithub /></a>
+            <a href='mailto:keoliya@usc.edu'><AiFillMail /></a>
             <a href='https://twitter.com/AkshitAbhay'><AiFillTwitterCircle /></a>
             <a href='https://www.instagram.com/machine.learning.chef'><AiFillInstagram /></a>
           </div>

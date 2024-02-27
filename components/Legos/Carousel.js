@@ -54,7 +54,7 @@ function Carousel() {
       initialSlide: 0,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
-      adaptiveHeight: true,
+      adaptiveHeight: false,
       responsive: [
         {
           breakpoint: 1024,
