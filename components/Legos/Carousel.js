@@ -47,13 +47,13 @@ function Carousel() {
 
     const settings = {
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
       initialSlide: 0,
       nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
+      // prevArrow: <SamplePrevArrow />,
       adaptiveHeight: false,
       responsive: [
         {
@@ -90,9 +90,8 @@ function Carousel() {
             <Slider {...settings}>
 
             <div className='  text-center rounded-xl group p-5 flex
-           bg-hover-bg-light
-            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-            <h3 className=' text-2xl pt-5 pb-2'>Certifications</h3>
+            dark:text-white dark:bg-[#060606]'>
+            <h3 className=' text-4xl pt-5 pb-2'>Certifications</h3>
             
             <div className=" flex justify-start m-auto items-center pb-5">
                 <p className='py-2 w-full ml-5
@@ -100,7 +99,7 @@ function Carousel() {
                 dark:text-white'>
                 These are some of my most recent certifications!
                 </p>
-                <BsArrowRight className=" text-2xl mx-5"/>
+                {/* <BsArrowRight className=" text-2xl mx-5"/> */}
                 </div>
                 <div className='flex justify-center'>
                     <Image src={certificate} width={100} height={100}/>
@@ -112,6 +111,13 @@ function Carousel() {
                 name="TensorFlow Developer Specialization"
                 source="DeepLearning.AI"
                 link="https://coursera.org/share/ea025eb7e88138cfcbac4cf00ff673f9" 
+            />
+
+              <Certificate 
+                img={gcloud}
+                name="Generative AI Fundamentals"
+                source="Google Cloud"
+                link="https://www.cloudskillsboost.google/public_profiles/244b103e-debd-4b14-a0f6-90ebc3705404/badges/5982644"
             />
 
             <Certificate 
@@ -135,12 +141,12 @@ function Carousel() {
                 link="https://www.credly.com/badges/7bdc937c-012d-4cce-af13-fb4b094541fe"
             />
 
-            <Certificate
+            {/* <Certificate
                 img={udemy}
                 name="Progressive Web App Bootcamp"
                 source="Udemy"
                 link="https://www.udemy.com/certificate/UC-2cb6a0fc-2bc3-445d-84d8-dad3038a0ee5/"
-            />
+            /> */}
           
             </Slider>
             </div>
@@ -150,9 +156,8 @@ function Carousel() {
             <Slider {...settings}>
 
             <div className='  text-center rounded-xl my-10 group p-5 flex-1
-           bg-hover-bg-light
-            dark:text-white dark:bg-card-dark dark:hover:bg-hover-bg-dark'>
-            <h3 className=' text-2xl pt-5 pb-2'>Achievements</h3>
+            dark:text-white dark:bg-[#060606] dark:hover:bg-hover-bg-dark'>
+            <h3 className=' text-4xl pt-5 pb-2'>Achievements</h3>
             
             <div className=" flex justify-start m-auto items-center pb-5">
                 <p className='py-2 w-full ml-5
@@ -160,7 +165,7 @@ function Carousel() {
                 dark:text-white'>
                 Collection of my Achievements and Recognitions! 
                 </p>
-                <BsArrowRight className=" text-2xl mx-5"/>
+                {/* <BsArrowRight className=" text-2xl mx-5"/> */}
                 </div>
                 <div className='flex justify-center'>
                     <Image src={achieve} width={100} height={100}/>

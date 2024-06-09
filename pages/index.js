@@ -106,7 +106,7 @@ export default function Home() {
 
               <div className='pt-5'>
               <a className=' bg-my-text-light dark:bg-my-text-dark text-white dark:text-gray-800
-              text-4xl
+              text-2xl lg:text-4xl
               font-productsans px-8 py-4 rounded-full' 
               href='/portfolio/Akshit_Keoliya_Resume.pdf' target="_blank" rel="noreferrer">
                 My Résumé
@@ -117,7 +117,10 @@ export default function Home() {
 
           {/* Contacts */}
 
-          <div className=' text-6xl flex justify-center gap-10 py-8 text-gray-600 dark:text-gray-400'>
+          <div className=' text-4xl lg:text-6xl 
+          flex justify-center 
+          gap-6 lg:gap-10 py-8 
+          text-gray-600 dark:text-gray-400'>
             <a href='https://www.linkedin.com/in/akshit-keoliya'><AiFillLinkedin /></a>  
             <a href='https://github.com/Leonardo-daVinci'><AiFillGithub /></a>
             <a href='mailto:keoliya@usc.edu'><AiFillMail /></a>
